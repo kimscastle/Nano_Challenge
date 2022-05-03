@@ -22,7 +22,6 @@
 		C03E27542820D4FC001A201C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C03E27592820D4FC001A201C /* TabViewPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabViewPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C03E275F2820D4FC001A201C /* TabViewPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabViewPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C03E27612820D4FC001A201C /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		C03E27702820D620001A201C /* ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,7 +47,6 @@
 			isa = PBXGroup;
 			children = (
 				C03E27512820D4FC001A201C /* Shared */,
-				C03E27602820D4FC001A201C /* macOS */,
 				C03E275A2820D4FC001A201C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,14 +69,6 @@
 				C03E275F2820D4FC001A201C /* TabViewPractice.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		C03E27602820D4FC001A201C /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				C03E27612820D4FC001A201C /* macOS.entitlements */,
-			);
-			path = macOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
