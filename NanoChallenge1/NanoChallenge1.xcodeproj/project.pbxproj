@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C08755FD282172F1002BC996 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08755FC282172F1002BC996 /* CarouselView.swift */; };
+		C08755FE282172F1002BC996 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08755FC282172F1002BC996 /* CarouselView.swift */; };
+		C087560028217678002BC996 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08755FF28217678002BC996 /* HomeView.swift */; };
+		C087560128217678002BC996 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08755FF28217678002BC996 /* HomeView.swift */; };
+		C087560328217E7B002BC996 /* BookInfoAlertVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = C087560228217E7B002BC996 /* BookInfoAlertVIew.swift */; };
+		C087560428217E7B002BC996 /* BookInfoAlertVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = C087560228217E7B002BC996 /* BookInfoAlertVIew.swift */; };
+		C087560928218FB3002BC996 /* Test1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C087560828218FB3002BC996 /* Test1View.swift */; };
+		C087560A28218FB3002BC996 /* Test1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C087560828218FB3002BC996 /* Test1View.swift */; };
+		C087560C28218FF6002BC996 /* Test2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C087560B28218FF6002BC996 /* Test2View.swift */; };
+		C087560D28218FF6002BC996 /* Test2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C087560B28218FF6002BC996 /* Test2View.swift */; };
 		C0B7234A281F9FA2002CCFB0 /* NanoChallenge1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B7233A281F9FA1002CCFB0 /* NanoChallenge1App.swift */; };
 		C0B7234B281F9FA2002CCFB0 /* NanoChallenge1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B7233A281F9FA1002CCFB0 /* NanoChallenge1App.swift */; };
 		C0B7234C281F9FA2002CCFB0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B7233B281F9FA1002CCFB0 /* ContentView.swift */; };
@@ -17,10 +27,14 @@
 		C0B7235B281FA651002CCFB0 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B72359281FA651002CCFB0 /* model.swift */; };
 		C0B72360281FC649002CCFB0 /* BookListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B7235F281FC649002CCFB0 /* BookListCellView.swift */; };
 		C0B72361281FC649002CCFB0 /* BookListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B7235F281FC649002CCFB0 /* BookListCellView.swift */; };
-		C0F890A1281FEFA60058D169 /* SnapToScroll in Frameworks */ = {isa = PBXBuildFile; productRef = C0F890A0281FEFA60058D169 /* SnapToScroll */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C08755FC282172F1002BC996 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		C08755FF28217678002BC996 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C087560228217E7B002BC996 /* BookInfoAlertVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInfoAlertVIew.swift; sourceTree = "<group>"; };
+		C087560828218FB3002BC996 /* Test1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test1View.swift; sourceTree = "<group>"; };
+		C087560B28218FF6002BC996 /* Test2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test2View.swift; sourceTree = "<group>"; };
 		C0B7233A281F9FA1002CCFB0 /* NanoChallenge1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanoChallenge1App.swift; sourceTree = "<group>"; };
 		C0B7233B281F9FA1002CCFB0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C0B7233C281F9FA2002CCFB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -35,7 +49,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0F890A1281FEFA60058D169 /* SnapToScroll in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,8 +93,13 @@
 		C0B72358281FA098002CCFB0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C08755FC282172F1002BC996 /* CarouselView.swift */,
 				C0B7233B281F9FA1002CCFB0 /* ContentView.swift */,
 				C0B7235F281FC649002CCFB0 /* BookListCellView.swift */,
+				C08755FF28217678002BC996 /* HomeView.swift */,
+				C087560228217E7B002BC996 /* BookInfoAlertVIew.swift */,
+				C087560828218FB3002BC996 /* Test1View.swift */,
+				C087560B28218FF6002BC996 /* Test2View.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -103,7 +121,6 @@
 			);
 			name = "NanoChallenge1 (iOS)";
 			packageProductDependencies = (
-				C0F890A0281FEFA60058D169 /* SnapToScroll */,
 			);
 			productName = "NanoChallenge1 (iOS)";
 			productReference = C0B72341281F9FA2002CCFB0 /* NanoChallenge1.app */;
@@ -154,7 +171,6 @@
 			);
 			mainGroup = C0B72334281F9FA1002CCFB0;
 			packageReferences = (
-				C0F8909F281FEFA60058D169 /* XCRemoteSwiftPackageReference "hstack-snap-to-scroll" */,
 			);
 			productRefGroup = C0B72342281F9FA2002CCFB0 /* Products */;
 			projectDirPath = "";
@@ -190,10 +206,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C08755FD282172F1002BC996 /* CarouselView.swift in Sources */,
 				C0B7234C281F9FA2002CCFB0 /* ContentView.swift in Sources */,
 				C0B7235A281FA651002CCFB0 /* model.swift in Sources */,
+				C087560C28218FF6002BC996 /* Test2View.swift in Sources */,
+				C087560028217678002BC996 /* HomeView.swift in Sources */,
 				C0B7234A281F9FA2002CCFB0 /* NanoChallenge1App.swift in Sources */,
 				C0B72360281FC649002CCFB0 /* BookListCellView.swift in Sources */,
+				C087560928218FB3002BC996 /* Test1View.swift in Sources */,
+				C087560328217E7B002BC996 /* BookInfoAlertVIew.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,10 +222,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C08755FE282172F1002BC996 /* CarouselView.swift in Sources */,
 				C0B7234D281F9FA2002CCFB0 /* ContentView.swift in Sources */,
 				C0B7235B281FA651002CCFB0 /* model.swift in Sources */,
+				C087560D28218FF6002BC996 /* Test2View.swift in Sources */,
+				C087560128217678002BC996 /* HomeView.swift in Sources */,
 				C0B7234B281F9FA2002CCFB0 /* NanoChallenge1App.swift in Sources */,
 				C0B72361281FC649002CCFB0 /* BookListCellView.swift in Sources */,
+				C087560A28218FB3002BC996 /* Test1View.swift in Sources */,
+				C087560428217E7B002BC996 /* BookInfoAlertVIew.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,25 +496,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		C0F8909F281FEFA60058D169 /* XCRemoteSwiftPackageReference "hstack-snap-to-scroll" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/swiftui-library/hstack-snap-to-scroll.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		C0F890A0281FEFA60058D169 /* SnapToScroll */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C0F8909F281FEFA60058D169 /* XCRemoteSwiftPackageReference "hstack-snap-to-scroll" */;
-			productName = SnapToScroll;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C0B72335281F9FA1002CCFB0 /* Project object */;
 }
