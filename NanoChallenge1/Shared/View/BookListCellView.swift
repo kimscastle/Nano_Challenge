@@ -10,29 +10,24 @@ import SwiftUI
 struct BookListCellView: View {
     let book: Mybook
     
+    
     var body: some View {
-//        Button {
-//            print("Text")
-//        } label: {
             VStack(alignment: .leading) {
                 RoundedRectangle(cornerRadius: 15)
                     .foregroundColor(book.backGroundColor)
-                    .frame(width: 220, height: 220)
+                    .frame(width: 170, height: 170)
                 Text(book.subject)
-                    .font(.system(size: 15, weight: .regular, design: .rounded))
-                    .frame(width: 220, alignment: .leading)
+                    .font(.system(size: 12, weight: .regular, design: .rounded))
+                    .frame(width: 170, alignment: .leading)
                     .foregroundColor(.appgray1)
                     .lineLimit(1)
                 Text(book.title)
-                    .font(.system(size: 20, weight: .bold, design: .rounded))
-                    .frame(width: 220, alignment: .leading)
+                    .font(.system(size: 15, weight: .bold, design: .rounded))
+                    .frame(width: 170, alignment: .leading)
                     .foregroundColor(.white)
+                    .opacity(0.7)
                     .lineLimit(1)
-//            }
         }
-
-
-        
     }
 }
 //

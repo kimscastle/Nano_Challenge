@@ -12,21 +12,27 @@ struct ReferenceSubCellView: View {
     let refsubcell: ReferenceSub
     var body: some View {
         ZStack {
-            RoundedRectangle(cornerRadius: 20)
-                .frame(width: screenSize.width * 0.85, height: 100)
+            RoundedRectangle(cornerRadius: 15)
+                .frame(width: screenSize.width * 0.90, height: 90)
                 .foregroundColor(refsubcell.backGroundColor)
             
             HStack{
+                Spacer().frame(width: 30)
                 Text(refsubcell.title)
+                    .font(.system(size: 17, weight: .semibold, design: .rounded))
+                    .foregroundColor(.white)
+                    .lineLimit(2)
                 
-                Spacer().frame(width: 100)
+                Spacer()
                 
                 refsubcell.image
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 50, height: 50)
+                
+                Spacer().frame(width: 30)
             }
-            .padding()
+
         }
     }
 }

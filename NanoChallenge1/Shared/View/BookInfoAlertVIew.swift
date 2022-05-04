@@ -9,6 +9,9 @@ import SwiftUI
 
 struct BookInfoAlertVIew: View {
     
+    let colorset: [Color] = [Color.primaryblue, Color.appyellow, Color.apporange]
+    @Binding var randomIndex: Int
+    
     let screenSize = UIScreen.main.bounds
     
     @Binding var mybooklists: [Mybook]
@@ -18,7 +21,7 @@ struct BookInfoAlertVIew: View {
     @State var title: String = ""
     
     func MakeAddBook(){
-        let newBook = Mybook(backGroundColor: Color(color), subject: subject, title: title)
+        let newBook = Mybook(backGroundColor: colorset[randomIndex], subject: subject, title: title)
         mybooklists.append(newBook)
         
         self.color = ""
@@ -27,23 +30,47 @@ struct BookInfoAlertVIew: View {
         self.isAddNewBook.toggle()
     }
     
-    var alertTitle: String = "만드려는 책의\n분야와 주제를 적어주세요"
+    var alertTitle: String = "책의 분야와 주제를 적어주세요"
     
     var body: some View {
         VStack {
+            Image("MainEmoji")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 80, height: 80)
+            
             Text(alertTitle)
-                .font(.system(size: 20, weight: .bold, design: .rounded))
+                .font(.system(size: 18, weight: .bold, design: .rounded))
+                .frame(width: 250, alignment: .leading)
                 .foregroundColor(.white)
                 .multilineTextAlignment(.leading)
                 .lineLimit(2)
-            TextField("Color", text: $color)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-            TextField("Subject", text: $subject)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-            TextField("Title", text: $title){
-                MakeAddBook()
+
+            ZStack(alignment: .leading) {
+                if subject.isEmpty{
+                    Text("공부하려는 분야를 입력 해주세요")
+                        .font(.system(size: 12, weight: .bold, design: .rounded))
+                        .underline()
+                        .foregroundColor(.white)
+                        .opacity(0.5)
+                }
+                TextField("", text: $subject)
+                    .frame(width: 250)
             }
-                .textFieldStyle(RoundedBorderTextFieldStyle())
+            ZStack(alignment: .leading) {
+                if title.isEmpty{
+                    Text("책 제목을 입력해주세요")
+                        .font(.system(size: 12, weight: .bold, design: .rounded))
+                        .underline()
+                        .foregroundColor(.white)
+                        .opacity(0.5)
+                }
+                TextField("", text: $title){
+                    MakeAddBook()
+                }
+                    .frame(width: 250)
+            }
+            Spacer().frame(height: 20)
             
             VStack{
                 Button {
@@ -51,7 +78,7 @@ struct BookInfoAlertVIew: View {
                 } label: {
                     ZStack {
                         RoundedRectangle(cornerRadius: 10)
-                            .frame(height: 40)
+                            .frame(width: 250, height: 40)
                         Text("나만의 책 만들기")
                             .font(.system(size: 15, weight: .medium, design: .rounded))
                             .foregroundColor(.white)
@@ -59,16 +86,31 @@ struct BookInfoAlertVIew: View {
                 }
 
             }
+            
+            Button {
+                isAddNewBook.toggle()
+            } label: {
+                Text("아니요, 안만들래요")
+                    .font(.system(size: 12, weight: .medium, design: .rounded))
+                    .underline()
+                    .foregroundColor(.white)
+                    .opacity(0.5)
+
+            }
+            Spacer()
+
+            
         }
         .padding()
-        .frame(width: screenSize.width*0.7, height: screenSize.height * 0.5)
+        .frame(width: screenSize.width*0.75, height: screenSize.height * 0.37)
         .background(Color.backgroundReverse)
         .clipShape(RoundedRectangle(cornerRadius: 20))
+        .shadow(color: .black, radius: 10)
     }
 }
 
 //struct BookInfoAlertVIew_Previews: PreviewProvider {
 //    static var previews: some View {
-//        BookInfoAlertVIew(mybooklists: $mybooklist, isAddNewBook: .constant(true))
+//        BookInfoAlertVIew(randomIndex: 1, mybooklists: .constant([Mybook(backGroundColor: .appgray2, subject: "subject", title: "title")]), isAddNewBook: .constant(true))
 //    }
 //}

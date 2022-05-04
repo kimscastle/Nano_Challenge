@@ -17,7 +17,7 @@ struct HomeView: View {
     ]
     
     
-    
+    @State var randomIndex: Int = 0
     @State var isAddNewBook = false
     @State var goTest1View = false
 //    @State var index: Int
@@ -35,63 +35,54 @@ struct HomeView: View {
                 VStack(alignment: .leading){
                     VStack(alignment: .leading, spacing: 0){
                         Text("My Own Book")
-                            .font(.title3.bold())
+                            .font(.system(size: 17, weight: .bold, design: .rounded))
                             .foregroundColor(.appgray1)
                         Text("나만의 책을\n만들고 채워나가 보세요")
                             .font(.system(size: 25, weight: .bold, design: .rounded))
                             .foregroundColor(.white)
+                            .lineLimit(2)
                     }
-                    
+                    .padding()
+                    Spacer()
                     ScrollView(.horizontal) {
-//                        NavigationLink(destination: TestView11()){
-//                            ForEach(mybooklists) {
-//                                BookListCellView(book: $0)
-//                            }
-//                        }
-                        LazyHGrid(rows: [GridItem(.adaptive(minimum: 220))]) {
+                        HStack(spacing:20) {
                             ForEach(mybooklists, id: \.self) { book in
                                 NavigationLink(destination: TestView11()){
                                     BookListCellView(book: book)
                                 }
                             }
+                            Button {
+                                isAddNewBook.toggle()
+                                randomIndex += 1
+                                randomIndex = randomIndex%3
+                            } label: {
+                                Circle()
+                                    .frame(width: 50, height: 50)
+                            }
+
                         }
                     }
-    //                ScrollView(.horizontal){
-    //                    HStack {
-    //                        ForEach(mybooklists) {
-    //                            BookListCellView(book: $0)
-    //                        }
-    //                        Button {
-    //                            isAddNewBook = true
-    //                        } label: {
-    //                            Circle()
-    //                                .frame(width: 40, height: 40)
-    //                                .foregroundColor(.gray)
-    //                        }
-    //                    }
-    //                }
                     
+                    Spacer()
+
+                    
+                    
+                    VStack(alignment: .leading) {
+                        Text("다양한 레퍼런스")
+                            .font(.system(size: 25, weight: .bold, design: .rounded))
+                            .foregroundColor(.white)
+                            .padding()
+                        
+                        Spacer().frame(height: 0)
+                        ForEach(refsublist1){ref in
+                            ReferenceSubCellView(refsubcell: ref)
+                        }
+                    }
                 }
                 .padding()
                 
                 if isAddNewBook {
-    //                    VStack(spacing: 30){
-    //                        TextField("color", text: $color)
-    //                            .foregroundColor(.white)
-    //                        TextField("summary", text: $summary)
-    //                        TextField("explain", text: $explain){
-    //                            MakeAddBook()
-    //                        }
-    //                        //enter를 누르면 할 action
-    //                    }
-    //                    .padding()
-    //
-    //                    Button(action: {
-    //                        MakeAddBook()
-    //                    }) {
-    //                        Text("Save")
-    //                    }
-                    BookInfoAlertVIew(mybooklists: $mybooklists, isAddNewBook: $isAddNewBook)
+                    BookInfoAlertVIew(randomIndex: $randomIndex, mybooklists: $mybooklists, isAddNewBook: $isAddNewBook)
                 }
             }
             .navigationBarHidden(true)
