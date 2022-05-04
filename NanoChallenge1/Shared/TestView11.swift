@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct TestView11: View {
+    var index: Int = 0
     var body: some View {
         
         ZStack {
             Color.background.ignoresSafeArea()
             VStack {
-                ForEach(refsublist1){ref in
+                ForEach(refSet[index]){ref in
                     ReferenceSubCellView(refsubcell: ref)
                 }
             }

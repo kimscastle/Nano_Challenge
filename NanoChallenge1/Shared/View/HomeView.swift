@@ -47,7 +47,7 @@ struct HomeView: View {
                     ScrollView(.horizontal) {
                         HStack(spacing:20) {
                             ForEach(mybooklists, id: \.self) { book in
-                                NavigationLink(destination: TestView11()){
+                                NavigationLink(destination: TestView11(index: mybooklists.firstIndex(of: book)!)){
                                     BookListCellView(book: book)
                                 }
                             }
