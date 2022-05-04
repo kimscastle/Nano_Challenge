@@ -82,7 +82,8 @@ struct HomeView: View {
                 .padding()
                 
                 if isAddNewBook {
-                    BookInfoAlertVIew(randomIndex: $randomIndex, mybooklists: $mybooklists, isAddNewBook: $isAddNewBook)
+//                    BookInfoAlertVIew(randomIndex: $randomIndex, mybooklists: $mybooklists, isAddNewBook: $isAddNewBook)
+                    InfinityCarouselView()
                 }
             }
             .navigationBarHidden(true)

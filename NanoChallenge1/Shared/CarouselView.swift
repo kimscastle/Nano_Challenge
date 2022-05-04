@@ -51,9 +51,9 @@ struct CarouselView: View {
                             .frame(width:300, height: 200)
                             //옆에있는 카드들 높이를 바꾸고 싶으면 height: self.getHeight(i)
                             .animation(.interpolatingSpring(stiffness: 300.0, damping: 30.0, initialVelocity: 10.0), value: carouselLocation)
-                                .background(Color.white)
-                            .cornerRadius(10)
-                            .shadow(radius: 3)
+//                                .background(Color.white)
+//                            .cornerRadius(10)
+//                            .shadow(radius: 3)
                                 
                                 
                             .opacity(self.getOpacity(i))
