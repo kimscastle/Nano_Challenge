@@ -20,6 +20,7 @@ struct InfinityCarouselView: View {
                 AnyView(CarouselCellView(mainref: refmainlist[5])),
                 AnyView(CarouselCellView(mainref: refmainlist[6]))
             ])
+            .frame(width: 300, height: 250)
         }
     }
 }

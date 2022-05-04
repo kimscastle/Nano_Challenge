@@ -16,11 +16,12 @@ struct HomeView: View {
         Mybook(backGroundColor: .appgray2, subject: "Django", title: "Django로 배우는 백엔드 기초")
     ]
     
-    
+//    @State var bookName: String = " "
     @State var randomIndex: Int = 0
     @State var isAddNewBook = false
     @State var goTest1View = false
 //    @State var index: Int
+//    let book: Mybook
     
     @Binding var color: String
     @Binding var subject: String
@@ -82,8 +83,8 @@ struct HomeView: View {
                 .padding()
                 
                 if isAddNewBook {
-//                    BookInfoAlertVIew(randomIndex: $randomIndex, mybooklists: $mybooklists, isAddNewBook: $isAddNewBook)
-                    InfinityCarouselView()
+                    BookInfoAlertVIew(randomIndex: $randomIndex, mybooklists: $mybooklists, isAddNewBook: $isAddNewBook)
+//                    InfinityCarouselView()
                 }
             }
             .navigationBarHidden(true)

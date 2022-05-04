@@ -23,8 +23,7 @@ struct BookInfoAlertVIew: View {
     func MakeAddBook(){
         let newBook = Mybook(backGroundColor: colorset[randomIndex], subject: subject, title: title)
         mybooklists.append(newBook)
-        
-        self.color = ""
+
         self.subject = ""
         self.title = ""
         self.isAddNewBook.toggle()
@@ -56,6 +55,7 @@ struct BookInfoAlertVIew: View {
                 }
                 TextField("", text: $subject)
                     .frame(width: 250)
+                    .keyboardType(.emailAddress)
             }
             ZStack(alignment: .leading) {
                 if title.isEmpty{
@@ -69,6 +69,7 @@ struct BookInfoAlertVIew: View {
                     MakeAddBook()
                 }
                     .frame(width: 250)
+                    .keyboardType(.emailAddress)
             }
             Spacer().frame(height: 20)
             

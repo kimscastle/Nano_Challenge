@@ -11,7 +11,7 @@ struct Mybook: Identifiable, Hashable {
     let id = UUID()
     let backGroundColor: Color
     let subject: String
-    let title: String
+    var title: String
 }
 
 struct ReferenceSub: Identifiable{
@@ -65,7 +65,19 @@ let test3: [ReferenceSub] = [
     ReferenceSub(backGroundColor: .appbrown2, image: Image("SwiftUITutorial_Icon"), title: "Test9")
 ]
 
-let refSet: [[ReferenceSub]] = [refsublist1, test1, test2, test3]
+let test4: [ReferenceSub] = [
+    ReferenceSub(backGroundColor: .apporange, image: Image("SwiftUI_Icon"), title: "Test10"),
+    ReferenceSub(backGroundColor: .appgray1, image: Image("SwiftUI_Icon"), title: "Test11"),
+    ReferenceSub(backGroundColor: .appbrown2, image: Image("SwiftUITutorial_Icon"), title: "Test12")
+]
+
+let test5: [ReferenceSub] = [
+    ReferenceSub(backGroundColor: .apporange, image: Image("SwiftUI_Icon"), title: "Test13"),
+    ReferenceSub(backGroundColor: .appgray1, image: Image("SwiftUI_Icon"), title: "Test14"),
+    ReferenceSub(backGroundColor: .appbrown2, image: Image("SwiftUITutorial_Icon"), title: "Test15")
+]
+
+let refSet: [[ReferenceSub]] = [refsublist1, test1, test2, test3, test4, test5]
 
 extension Color{
     static let primaryblue = Color("primaryblue")
