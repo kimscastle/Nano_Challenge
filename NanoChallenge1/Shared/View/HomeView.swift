@@ -16,7 +16,6 @@ struct HomeView: View {
         Mybook(backGroundColor: .appgray2, subject: "Django", title: "Django로 배우는 백엔드 기초")
     ]
     
-//    @State var bookName: String = " "
     @State var randomIndex: Int = 0
     @State var isAddNewBook = false
     @State var goTest1View = false
@@ -45,11 +44,12 @@ struct HomeView: View {
                     }
                     .padding()
                     Spacer()
-                    ScrollView(.horizontal) {
+                    ScrollView(.horizontal, showsIndicators: false) {
                         HStack(spacing:20) {
                             ForEach(mybooklists, id: \.self) { book in
-                                NavigationLink(destination: TestView11(index: mybooklists.firstIndex(of: book)!)){
+                                NavigationLink(destination: TestView11(book: book, index: mybooklists.firstIndex(of: book)!)){
                                     BookListCellView(book: book)
+                                    
                                 }
                             }
                             Button {

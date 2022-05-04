@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct TestView11: View {
-//    @Binding var bookName: String
+    var book: Mybook
     var index: Int = 1
     var body: some View {
         
         ZStack {
             Color.background.ignoresSafeArea()
             VStack {
-                Text("")
+                Text(book.title)
+                    .font(.system(size: 20, weight: .bold, design: .rounded))
+                    .foregroundColor(.white)
                 InfinityCarouselView()
                     .frame(width: 300, height: 300)
                 ForEach(refSet[index]){ref in
@@ -24,11 +26,5 @@ struct TestView11: View {
             }
 
         }
-    }
-}
-
-struct TestView11_Previews: PreviewProvider {
-    static var previews: some View {
-        TestView11()
     }
 }

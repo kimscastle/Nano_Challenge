@@ -23,8 +23,6 @@
 		C087561A2822BABF002BC996 /* CarouselCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08756192822BABF002BC996 /* CarouselCellView.swift */; };
 		C0B7234A281F9FA2002CCFB0 /* NanoChallenge1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B7233A281F9FA1002CCFB0 /* NanoChallenge1App.swift */; };
 		C0B7234B281F9FA2002CCFB0 /* NanoChallenge1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B7233A281F9FA1002CCFB0 /* NanoChallenge1App.swift */; };
-		C0B7234C281F9FA2002CCFB0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B7233B281F9FA1002CCFB0 /* ContentView.swift */; };
-		C0B7234D281F9FA2002CCFB0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B7233B281F9FA1002CCFB0 /* ContentView.swift */; };
 		C0B7234E281F9FA2002CCFB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0B7233C281F9FA2002CCFB0 /* Assets.xcassets */; };
 		C0B7234F281F9FA2002CCFB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0B7233C281F9FA2002CCFB0 /* Assets.xcassets */; };
 		C0B7235A281FA651002CCFB0 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B72359281FA651002CCFB0 /* model.swift */; };
@@ -43,7 +41,6 @@
 		C08756172822B965002BC996 /* InfinityCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfinityCarouselView.swift; sourceTree = "<group>"; };
 		C08756192822BABF002BC996 /* CarouselCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCellView.swift; sourceTree = "<group>"; };
 		C0B7233A281F9FA1002CCFB0 /* NanoChallenge1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanoChallenge1App.swift; sourceTree = "<group>"; };
-		C0B7233B281F9FA1002CCFB0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C0B7233C281F9FA2002CCFB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0B72341281F9FA2002CCFB0 /* NanoChallenge1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanoChallenge1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0B72347281F9FA2002CCFB0 /* NanoChallenge1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanoChallenge1.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,7 +81,6 @@
 				C0B72359281FA651002CCFB0 /* model.swift */,
 				C0B72358281FA098002CCFB0 /* View */,
 				C0B7233C281F9FA2002CCFB0 /* Assets.xcassets */,
-				C0B7233B281F9FA1002CCFB0 /* ContentView.swift */,
 				C087561128220B06002BC996 /* TestView11.swift */,
 				C0B7233A281F9FA1002CCFB0 /* NanoChallenge1App.swift */,
 			);
@@ -218,7 +214,6 @@
 			files = (
 				C08755FD282172F1002BC996 /* CarouselView.swift in Sources */,
 				C087561228220B06002BC996 /* TestView11.swift in Sources */,
-				C0B7234C281F9FA2002CCFB0 /* ContentView.swift in Sources */,
 				C08756182822B965002BC996 /* InfinityCarouselView.swift in Sources */,
 				C087561528221E7B002BC996 /* ReferenceSubCellView.swift in Sources */,
 				C087560F2821FF2B002BC996 /* BookDetailView.swift in Sources */,
@@ -237,7 +232,6 @@
 			files = (
 				C08755FE282172F1002BC996 /* CarouselView.swift in Sources */,
 				C087561328220B06002BC996 /* TestView11.swift in Sources */,
-				C0B7234D281F9FA2002CCFB0 /* ContentView.swift in Sources */,
 				C087561628221E7B002BC996 /* ReferenceSubCellView.swift in Sources */,
 				C08756102821FF2B002BC996 /* BookDetailView.swift in Sources */,
 				C0B7235B281FA651002CCFB0 /* model.swift in Sources */,
