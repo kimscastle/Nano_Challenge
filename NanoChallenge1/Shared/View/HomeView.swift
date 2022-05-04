@@ -16,78 +16,85 @@ struct HomeView: View {
         Mybook(backGroundColor: .appgray2, subject: "Django", title: "Django로 배우는 백엔드 기초")
     ]
     
+    
+    
     @State var isAddNewBook = false
     @State var goTest1View = false
+//    @State var index: Int
     
     @Binding var color: String
     @Binding var subject: String
     @Binding var title: String
     
-//    func MakeAddBook(){
-//        let newBook = Mybook(backGroundColor: Color(color), subject: subject, title: title)
-//        mybooklists.append(newBook)
-//        
-//        self.color = ""
-//        self.subject = ""
-//        self.title = ""
-//        self.isAddNewBook.toggle()
-//    }
-    
     var body: some View {
 
-        ZStack{
-            Color.background.ignoresSafeArea(.all)
-            
-            VStack(alignment: .leading){
-                VStack(alignment: .leading, spacing: 0){
-                    Text("My Own Book")
-                        .font(.title3.bold())
-                        .foregroundColor(.appgray1)
-                    Text("나만의 책을\n만들고 채워나가 보세요")
-                        .font(.system(size: 25, weight: .bold, design: .rounded))
-                        .foregroundColor(.white)
-                }
+        NavigationView {
+            ZStack{
+                Color.background.ignoresSafeArea(.all)
                 
-                ScrollView(.horizontal){
-                    HStack {
-                        ForEach(mybooklists) {
-                            BookListCellView(goTest1View: $goTest1View, book: $0)
-                        }
-                        Button {
-                            isAddNewBook = true
-                        } label: {
-                            Circle()
-                                .frame(width: 40, height: 40)
-                                .foregroundColor(.gray)
+                VStack(alignment: .leading){
+                    VStack(alignment: .leading, spacing: 0){
+                        Text("My Own Book")
+                            .font(.title3.bold())
+                            .foregroundColor(.appgray1)
+                        Text("나만의 책을\n만들고 채워나가 보세요")
+                            .font(.system(size: 25, weight: .bold, design: .rounded))
+                            .foregroundColor(.white)
+                    }
+                    
+                    ScrollView(.horizontal) {
+//                        NavigationLink(destination: TestView11()){
+//                            ForEach(mybooklists) {
+//                                BookListCellView(book: $0)
+//                            }
+//                        }
+                        LazyHGrid(rows: [GridItem(.adaptive(minimum: 220))]) {
+                            ForEach(mybooklists, id: \.self) { book in
+                                NavigationLink(destination: TestView11()){
+                                    BookListCellView(book: book)
+                                }
+                            }
                         }
                     }
+    //                ScrollView(.horizontal){
+    //                    HStack {
+    //                        ForEach(mybooklists) {
+    //                            BookListCellView(book: $0)
+    //                        }
+    //                        Button {
+    //                            isAddNewBook = true
+    //                        } label: {
+    //                            Circle()
+    //                                .frame(width: 40, height: 40)
+    //                                .foregroundColor(.gray)
+    //                        }
+    //                    }
+    //                }
+                    
                 }
+                .padding()
                 
+                if isAddNewBook {
+    //                    VStack(spacing: 30){
+    //                        TextField("color", text: $color)
+    //                            .foregroundColor(.white)
+    //                        TextField("summary", text: $summary)
+    //                        TextField("explain", text: $explain){
+    //                            MakeAddBook()
+    //                        }
+    //                        //enter를 누르면 할 action
+    //                    }
+    //                    .padding()
+    //
+    //                    Button(action: {
+    //                        MakeAddBook()
+    //                    }) {
+    //                        Text("Save")
+    //                    }
+                    BookInfoAlertVIew(mybooklists: $mybooklists, isAddNewBook: $isAddNewBook)
+                }
             }
-            .padding()
-            
-            if isAddNewBook {
-//                    VStack(spacing: 30){
-//                        TextField("color", text: $color)
-//                            .foregroundColor(.white)
-//                        TextField("summary", text: $summary)
-//                        TextField("explain", text: $explain){
-//                            MakeAddBook()
-//                        }
-//                        //enter를 누르면 할 action
-//                    }
-//                    .padding()
-//
-//                    Button(action: {
-//                        MakeAddBook()
-//                    }) {
-//                        Text("Save")
-//                    }
-                BookInfoAlertVIew(mybooklists: $mybooklists, isAddNewBook: $isAddNewBook)
-            }
-            if goTest1View{
-                Test1View(goTest1View: $goTest1View)
-            }
+            .navigationBarHidden(true)
         }
     }
 }

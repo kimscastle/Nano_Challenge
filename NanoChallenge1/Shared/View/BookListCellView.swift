@@ -8,15 +8,12 @@
 import SwiftUI
 
 struct BookListCellView: View {
-    @Binding var goTest1View: Bool
     let book: Mybook
     
     var body: some View {
-        Button {
-            if book.title == "SwiftUI Tutorial 끝내기" {
-                goTest1View.toggle()
-            }
-        } label: {
+//        Button {
+//            print("Text")
+//        } label: {
             VStack(alignment: .leading) {
                 RoundedRectangle(cornerRadius: 15)
                     .foregroundColor(book.backGroundColor)
@@ -31,7 +28,7 @@ struct BookListCellView: View {
                     .frame(width: 220, alignment: .leading)
                     .foregroundColor(.white)
                     .lineLimit(1)
-            }
+//            }
         }
 
 
