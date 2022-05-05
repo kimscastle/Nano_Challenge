@@ -125,7 +125,7 @@ let study4: [Mystudy] = [
     Mystudy(image: Image("grayicon"), title: "Django Study - What is \"REST API\"?🎨", date: "5월 1일(화요일) - Django로 배우는 백엔드 기초")
 ]
 
-let study5: [Mystudy] = [
+var study5: [Mystudy] = [
 //    Mystudy(image: Image("blueicon"), title: "SwiftUI Study - Text✏️", date: "4월 20일(목요일) - SwiftUI Study Book"),
 //    Mystudy(image: Image("grayicon"), title: "SwiftUI Study - Image🎨", date: "4월 21일(금요일) - SwiftUI Study Book"),
 //    Mystudy(image: Image("orangeicon"), title: "SwiftUI Study - Stack📚", date: "4월 22일(토요일) - SwiftUI Study Book")
@@ -137,7 +137,7 @@ let study6: [Mystudy] = [
 //    Mystudy(image: Image("orangeicon"), title: "SwiftUI Study - Stack📚", date: "4월 22일(토요일) - SwiftUI Study Book")
 ]
 
-let studySet: [[Mystudy]] = [study1, study2, study3, study4, study5, study6]
+//let studySet: [[Mystudy]] = [study1, study2, study3, study4]
 
 let error1: [Mystudy] = [
     Mystudy(image: Image("erroricon"), title: "Button이 안눌리고 Text만 눌릴 때", date: "4월 20일(목요일) - SwiftUI Study Book"),

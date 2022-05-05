@@ -9,7 +9,10 @@ import SwiftUI
 
 struct TestView11: View {
     @Environment(\.presentationMode) var presentationMode
+    @State var studySet: [[Mystudy]] = [study1, study2, study3, study4, study5, study6]
     @State var changelist: Bool = false
+    @State var isAddNewStudy = false
+    @State var randomIndex1: Int = 0
     
     var book: Mybook
     var index: Int = 0
@@ -135,7 +138,7 @@ struct TestView11: View {
                         Spacer().frame(height: 20)
                         
                         Button {
-                            print("hello world")
+                            isAddNewStudy.toggle()
                         } label: {
                             ZStack {
                                 RoundedRectangle(cornerRadius: 17)
@@ -153,6 +156,9 @@ struct TestView11: View {
                     Spacer()
                 }
                 .navigationBarHidden(true)
+                if isAddNewStudy {
+                    StudyAlertVIew(randomIndex1: $randomIndex1, studySet: $studySet, isAddNewStudy: $isAddNewStudy)
+                }
             }
         }
         .navigationBarHidden(true)

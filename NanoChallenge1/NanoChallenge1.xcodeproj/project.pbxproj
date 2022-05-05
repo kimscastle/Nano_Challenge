@@ -88,6 +88,7 @@
 				C0B72358281FA098002CCFB0 /* View */,
 				C0B7233C281F9FA2002CCFB0 /* Assets.xcassets */,
 				C087561128220B06002BC996 /* TestView11.swift */,
+				C042738E2824200900F292DA /* StudyAlertView.swift */,
 				C0B7233A281F9FA1002CCFB0 /* NanoChallenge1App.swift */,
 			);
 			path = Shared;
@@ -114,7 +115,6 @@
 				C087561428221E7B002BC996 /* ReferenceSubCellView.swift */,
 				C042738A2823AC2600F292DA /* AllRefCellView.swift */,
 				C042738C28240F9700F292DA /* StudyCellView.swift */,
-				C042738E2824200900F292DA /* StudyAlertView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
