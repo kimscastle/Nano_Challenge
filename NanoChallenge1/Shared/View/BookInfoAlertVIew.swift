@@ -87,6 +87,7 @@ struct BookInfoAlertVIew: View {
                 }
 
             }
+            Spacer()
             
             Button {
                 isAddNewBook.toggle()

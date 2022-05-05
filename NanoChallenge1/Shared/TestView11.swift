@@ -22,6 +22,7 @@ struct TestView11: View {
                     .frame(width: 300, height: 300)
                 ForEach(refSet[index]){ref in
                     ReferenceSubCellView(refsubcell: ref)
+                        .padding(.horizontal)
                 }
             }
 

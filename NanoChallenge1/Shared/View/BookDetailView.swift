@@ -8,18 +8,28 @@
 import SwiftUI
 
 struct BookDetailView: View {
+    @Binding var goAllref: Bool
     var body: some View {
         ZStack {
             Color.background.ignoresSafeArea()
-            Text("BookDetailView")
-                .font(.title.bold())
+            VStack {
+                Text("BookDetailView")
+                    .font(.title.bold())
                 .foregroundColor(.white)
+                
+                Button {
+                    goAllref.toggle()
+                } label: {
+                    Text("go")
+                }
+
+            }
         }
     }
 }
 
 struct BookDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        BookDetailView()
+        BookDetailView(goAllref: .constant(false))
     }
 }
