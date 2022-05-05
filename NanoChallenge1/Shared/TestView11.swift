@@ -8,24 +8,71 @@
 import SwiftUI
 
 struct TestView11: View {
+    @State var changelist:Bool = false
     var book: Mybook
-    var index: Int = 1
+    var index: Int = 0
+    let screenSize = UIScreen.main.bounds
     var body: some View {
         
-        ZStack {
-            Color.background.ignoresSafeArea()
-            VStack {
-                Text(book.title)
-                    .font(.system(size: 20, weight: .bold, design: .rounded))
-                    .foregroundColor(.white)
-                InfinityCarouselView()
-                    .frame(width: 300, height: 300)
-                ForEach(refSet[index]){ref in
-                    ReferenceSubCellView(refsubcell: ref)
-                        .padding(.horizontal)
+        NavigationView {
+            ZStack {
+                Color.background.ignoresSafeArea()
+                ScrollView {
+                    VStack {
+                        Text(book.title)
+                            .font(.system(size: 20, weight: .bold, design: .rounded))
+                            .foregroundColor(.white)
+                        InfinityCarouselView()
+                            .frame(width: 300, height: 300)
+                        
+                        HStack{
+                            VStack{
+                                Button {
+                                    changelist = false
+                                } label: {
+                                    VStack(alignment: .center) {
+                                        Text("카테고리")
+                                            .font(.system(size: 20, weight: .bold, design: .rounded))
+                                            .foregroundColor(.white)
+            
+                                        
+                                        Rectangle()
+                                            .fill(Color.white)
+                                            .frame(width: screenSize.width*0.35, height: 2)
+                                    }
+                                    .opacity(changelist ? 0.3 : 1)
+                                }
+
+                            }
+                            Spacer().frame(width: 30)
+                            VStack{
+                                Button {
+                                    changelist = true
+                                } label: {
+                                    VStack(alignment: .center) {
+                                        Text("오류모음")
+                                            .font(.system(size: 20, weight: .bold, design: .rounded))
+                                            .foregroundColor(.white)
+       
+                                        Rectangle()
+                                            .fill(Color.white)
+                                            .frame(width: screenSize.width*0.35, height: 2)
+                                    }
+                                    .opacity(changelist ? 1 : 0.3)
+                                }
+                            }
+                        }
+                        ForEach(refSet[index]){ref in
+                            ReferenceSubCellView(refsubcell: ref)
+                                .padding(.horizontal)
+                        }
+                    }
+                    Spacer()
                 }
+                .navigationBarHidden(true)
             }
         }
+        .navigationBarHidden(true)
     }
 }
 
