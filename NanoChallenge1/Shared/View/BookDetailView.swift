@@ -28,8 +28,9 @@ struct BookDetailView: View {
                                 Image(systemName: "chevron.left")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
-                                    .frame(width: 30, height: 20)
+                                    .frame(width: 20, height: 20)
                                     .foregroundColor(.white)
+                                    .opacity(0.7)
                             }
                         }
                         Spacer().frame(width: 330)

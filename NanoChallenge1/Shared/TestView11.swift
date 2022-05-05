@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TestView11: View {
+    @Environment(\.presentationMode) var presentationMode
     @State var changelist: Bool = false
     
     var book: Mybook
@@ -19,13 +20,27 @@ struct TestView11: View {
             ZStack {
                 Color.background.ignoresSafeArea()
                 ScrollView {
-//                    Button {
-//                        gohome.toggle()
-//                    } label: {
-//                        Text("hhhhh")
-//                    }
+                    Spacer().frame(height: 20)
+                    Button(action: {
+                                    presentationMode.wrappedValue.dismiss()
+                                }, label: {
+                                    HStack(spacing: 0) {
+                                        Image(systemName: "chevron.left")
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                            .frame(width: 20, height: 20)
+                                            .foregroundColor(.white)
+                                            .opacity(0.7)
+                                        Text("홈으로가기")
+                                            .font(.system(size: 15, weight: .medium, design: .rounded))
+                                            .foregroundColor(.white)
+                                            .opacity(0.7)
+                                        Spacer().frame(width: 255)
+                                    }
+                                })
+                                .accentColor(.white)
 
-                    Spacer().frame(height: 40)
+                    Spacer().frame(height: 20)
                     VStack {
                         Text(book.title)
                             .font(.system(size: 20, weight: .bold, design: .rounded))

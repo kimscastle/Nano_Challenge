@@ -15,6 +15,13 @@ struct Mybook: Identifiable, Hashable {
     let emoji: String
 }
 
+struct Mystudy: Identifiable{
+    let id = UUID()
+    let image: Image
+    let title: String
+    let date: String
+}
+
 struct ReferenceSub: Identifiable{
     let id = UUID()
     let backGroundColor: Color
@@ -74,22 +81,36 @@ let test2: [ReferenceSub] = [
 let test3: [ReferenceSub] = [
     ReferenceSub(backGroundColor: .apporange, image: Image("SwiftUI_Icon"), title: "Test7"),
     ReferenceSub(backGroundColor: .appgray1, image: Image("Velog_Icon"), title: "Test8"),
-    ReferenceSub(backGroundColor: .appbrown2, image: Image("SwiftUITutorial_Icon"), title: "Test9")
+    ReferenceSub(backGroundColor: .appbrown2, image: Image("SwiftUITutorial_Icon"), title: "Test9"),
+    ReferenceSub(backGroundColor: .appgray1, image: Image("Design_Icom"), title: "Test10")
 ]
 
 let test4: [ReferenceSub] = [
-    ReferenceSub(backGroundColor: .apporange, image: Image("SwiftUI_Icon"), title: "Test10"),
-    ReferenceSub(backGroundColor: .appgray1, image: Image("Design_Icom"), title: "Test11"),
-    ReferenceSub(backGroundColor: .appbrown2, image: Image("SwiftUITutorial_Icon"), title: "Test12")
+    ReferenceSub(backGroundColor: .apporange, image: Image("SwiftUI_Icon"), title: "Test11"),
+    ReferenceSub(backGroundColor: .appgray1, image: Image("Design_Icom"), title: "Test12"),
+    ReferenceSub(backGroundColor: .appbrown2, image: Image("SwiftUITutorial_Icon"), title: "Test13"),
+    ReferenceSub(backGroundColor: .appgray1, image: Image("A_Icon"), title: "Test14")
 ]
 
 let test5: [ReferenceSub] = [
-    ReferenceSub(backGroundColor: .apporange, image: Image("SwiftUI_Icon"), title: "Test13"),
-    ReferenceSub(backGroundColor: .appgray1, image: Image("A_Icon"), title: "Test14"),
-    ReferenceSub(backGroundColor: .appbrown2, image: Image("SwiftUITutorial_Icon"), title: "Test15")
+    ReferenceSub(backGroundColor: .apporange, image: Image("SwiftUI_Icon"), title: "Test15"),
+    ReferenceSub(backGroundColor: .appgray1, image: Image("A_Icon"), title: "Test16"),
+    ReferenceSub(backGroundColor: .appbrown2, image: Image("SwiftUITutorial_Icon"), title: "Test17")
 ]
 
 let refSet: [[ReferenceSub]] = [refsublist1, test1, test2, test3, test4, test5]
+
+let study1: [Mystudy] = [
+    Mystudy(image: Image("blueicon"), title: "SwiftUI Study - Text✏️", date: "4월 20일(목요일) - SwiftUI Study Book"),
+    Mystudy(image: Image("grayicon"), title: "SwiftUI Study - Image🎨", date: "4월 21일(금요일) - SwiftUI Study Book"),
+    Mystudy(image: Image("blueicon"), title: "SwiftUI Study - Stack📚", date: "4월 22일(토요일) - SwiftUI Study Book")
+]
+
+let error1: [Mystudy] = [
+    Mystudy(image: Image("erroricon"), title: "Button이 안눌리고 Text만 눌릴 때", date: "4월 20일(목요일) - SwiftUI Study Book"),
+    Mystudy(image: Image("erroricon"), title: "Binding Type에서 Error가 날 때", date: "4월 21일(금요일) - SwiftUI Study Book"),
+    Mystudy(image: Image("erroricon"), title: "SwiftUI Stack이 안 보일 때", date: "4월 22일(토요일) - SwiftUI Study Book")
+]
 
 extension Color{
     static let primaryblue = Color("primaryblue")

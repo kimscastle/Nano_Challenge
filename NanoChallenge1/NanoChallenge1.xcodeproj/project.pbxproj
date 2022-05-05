@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C042738B2823AC2600F292DA /* AllRefCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C042738A2823AC2600F292DA /* AllRefCellView.swift */; };
+		C042738D28240F9700F292DA /* StudyCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C042738C28240F9700F292DA /* StudyCellView.swift */; };
 		C08755FD282172F1002BC996 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08755FC282172F1002BC996 /* CarouselView.swift */; };
 		C08755FE282172F1002BC996 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08755FC282172F1002BC996 /* CarouselView.swift */; };
 		C087560028217678002BC996 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08755FF28217678002BC996 /* HomeView.swift */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		C042738A2823AC2600F292DA /* AllRefCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllRefCellView.swift; sourceTree = "<group>"; };
+		C042738C28240F9700F292DA /* StudyCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyCellView.swift; sourceTree = "<group>"; };
 		C08755FC282172F1002BC996 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 		C08755FF28217678002BC996 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C087560228217E7B002BC996 /* BookInfoAlertVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInfoAlertVIew.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				C087560228217E7B002BC996 /* BookInfoAlertVIew.swift */,
 				C087561428221E7B002BC996 /* ReferenceSubCellView.swift */,
 				C042738A2823AC2600F292DA /* AllRefCellView.swift */,
+				C042738C28240F9700F292DA /* StudyCellView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C042738B2823AC2600F292DA /* AllRefCellView.swift in Sources */,
+				C042738D28240F9700F292DA /* StudyCellView.swift in Sources */,
 				C08755FD282172F1002BC996 /* CarouselView.swift in Sources */,
 				C087561228220B06002BC996 /* TestView11.swift in Sources */,
 				C08756182822B965002BC996 /* InfinityCarouselView.swift in Sources */,
