@@ -13,6 +13,7 @@ struct TestView11: View {
     @State var changelist: Bool = false
     @State var isAddNewStudy = false
     @State var randomIndex1: Int = 0
+    @State var goHome: Bool = false
     
     var book: Mybook
     var index: Int = 0

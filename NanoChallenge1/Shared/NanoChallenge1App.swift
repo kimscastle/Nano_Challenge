@@ -11,7 +11,7 @@ import SwiftUI
 struct NanoChallenge1App: App {
     var body: some Scene {
         WindowGroup {
-            HomeView(color: .constant(""), subject: .constant(""), title: .constant(""))
+            HomeView()
         }
     }
 }

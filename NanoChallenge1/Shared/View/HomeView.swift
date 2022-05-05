@@ -22,9 +22,9 @@ struct HomeView: View {
     
     @State var goHome = false
     
-    @Binding var color: String
-    @Binding var subject: String
-    @Binding var title: String
+//    @Binding var color: String
+//    @Binding var subject: String
+//    @Binding var title: String
     
     var body: some View {
 
@@ -156,6 +156,6 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView(color: .constant(""), subject: .constant(""), title: .constant(""))
+        HomeView()
     }
 }
