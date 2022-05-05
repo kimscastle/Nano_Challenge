@@ -4,23 +4,23 @@
 //
 //  Created by uiskim on 2022/05/03.
 //
-
 import SwiftUI
 
 struct HomeView: View {
     
     @State private var mybooklists: [Mybook] = [
-        Mybook(backGroundColor: .appyellow, subject: "swiftUI", title: "SwiftUI Tutorial 끝내기"),
-        Mybook(backGroundColor: .appbrown1, subject: "swiftUI", title: "다양한 SwiftUI Examples"),
-        Mybook(backGroundColor: .appbrown2, subject: "Python", title: "Python의 기초와 응용"),
-        Mybook(backGroundColor: .appgray2, subject: "Django", title: "Django로 배우는 백엔드 기초")
+        Mybook(backGroundColor: .appyellow, subject: "swiftUI", title: "SwiftUI Tutorial 끝내기", emoji: "📓"),
+        Mybook(backGroundColor: .appbrown1, subject: "swiftUI", title: "다양한 SwiftUI Examples", emoji: "📔"),
+        Mybook(backGroundColor: .appbrown2, subject: "Python", title: "Python의 기초와 응용", emoji: "📕"),
+        Mybook(backGroundColor: .appgray2, subject: "Django", title: "Django로 배우는 백엔드 기초", emoji: "📗")
     ]
+    
     @State var goAllref: Bool = false
     @State var randomIndex: Int = 0
     @State var isAddNewBook = false
     @State var goTest1View = false
-//    @State var index: Int
-//    let book: Mybook
+    
+    @State var goHome = false
     
     @Binding var color: String
     @Binding var subject: String

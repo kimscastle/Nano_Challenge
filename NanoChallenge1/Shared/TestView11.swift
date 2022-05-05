@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct TestView11: View {
-    @State var changelist:Bool = false
+    @State var changelist: Bool = false
+    
     var book: Mybook
     var index: Int = 0
     let screenSize = UIScreen.main.bounds
@@ -18,6 +19,13 @@ struct TestView11: View {
             ZStack {
                 Color.background.ignoresSafeArea()
                 ScrollView {
+//                    Button {
+//                        gohome.toggle()
+//                    } label: {
+//                        Text("hhhhh")
+//                    }
+
+                    Spacer().frame(height: 40)
                     VStack {
                         Text(book.title)
                             .font(.system(size: 20, weight: .bold, design: .rounded))
@@ -78,6 +86,6 @@ struct TestView11: View {
 
 struct TestView11_Previews: PreviewProvider {
     static var previews: some View {
-        TestView11(book: .init(backGroundColor: Color("red"), subject: "ddd", title: "ddd"))
+        TestView11(book: .init(backGroundColor: Color("red"), subject: "ddd", title: "ddd", emoji: "📕"))
     }
 }

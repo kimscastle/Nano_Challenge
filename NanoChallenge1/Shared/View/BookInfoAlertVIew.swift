@@ -10,6 +10,7 @@ import SwiftUI
 struct BookInfoAlertVIew: View {
     
     let colorset: [Color] = [Color.primaryblue, Color.appyellow, Color.apporange]
+    let emojiset: [String] = ["📘", "📙", "📝"]
     @Binding var randomIndex: Int
     
     let screenSize = UIScreen.main.bounds
@@ -19,9 +20,10 @@ struct BookInfoAlertVIew: View {
     @State var color: String = ""
     @State var subject: String = ""
     @State var title: String = ""
+    @State var emoji: String = ""
     
     func MakeAddBook(){
-        let newBook = Mybook(backGroundColor: colorset[randomIndex], subject: subject, title: title)
+        let newBook = Mybook(backGroundColor: colorset[randomIndex], subject: subject, title: title, emoji: emojiset[randomIndex])
         mybooklists.append(newBook)
 
         self.subject = ""

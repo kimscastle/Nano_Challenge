@@ -13,9 +13,14 @@ struct BookListCellView: View {
     
     var body: some View {
             VStack(alignment: .leading) {
-                RoundedRectangle(cornerRadius: 15)
-                    .foregroundColor(book.backGroundColor)
-                    .frame(width: 170, height: 170)
+                ZStack {
+                    RoundedRectangle(cornerRadius: 15)
+                        .foregroundColor(book.backGroundColor)
+                        .frame(width: 170, height: 170)
+                    
+                    Text(book.emoji)
+                        .font(.system(size: 100, weight: .bold, design: .rounded))
+                }
                 Text(book.subject)
                     .font(.system(size: 12, weight: .regular, design: .rounded))
                     .frame(width: 170, alignment: .leading)

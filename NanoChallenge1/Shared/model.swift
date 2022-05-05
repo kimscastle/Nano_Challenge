@@ -12,6 +12,7 @@ struct Mybook: Identifiable, Hashable {
     let backGroundColor: Color
     let subject: String
     var title: String
+    let emoji: String
 }
 
 struct ReferenceSub: Identifiable{
