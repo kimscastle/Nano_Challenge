@@ -57,13 +57,14 @@ struct TestView11: View {
                                         Text("카테고리")
                                             .font(.system(size: 20, weight: .bold, design: .rounded))
                                             .foregroundColor(.white)
-            
+                                            .opacity(changelist ? 0.3 : 1)
                                         
                                         Rectangle()
                                             .fill(Color.white)
                                             .frame(width: screenSize.width*0.35, height: 2)
+                                            .opacity(changelist ? 0 : 1)
                                     }
-                                    .opacity(changelist ? 0.3 : 1)
+
                                 }
 
                             }
@@ -76,19 +77,78 @@ struct TestView11: View {
                                         Text("오류모음")
                                             .font(.system(size: 20, weight: .bold, design: .rounded))
                                             .foregroundColor(.white)
+                                            .opacity(changelist ? 1 : 0.3)
        
                                         Rectangle()
                                             .fill(Color.white)
                                             .frame(width: screenSize.width*0.35, height: 2)
+                                            .opacity(changelist ? 1 : 0)
                                     }
-                                    .opacity(changelist ? 1 : 0.3)
+
                                 }
                             }
                         }
-                        ForEach(refSet[index]){ref in
-                            ReferenceSubCellView(refsubcell: ref)
-                                .padding(.horizontal)
+                        
+                        Spacer().frame(height: 0)
+                        
+                        if changelist == false {
+                            if studySet[index].isEmpty {
+                                Spacer().frame(height: 30)
+                                VStack {
+                                    Text("\"내용추가하기\" 버튼을 눌러\n내용을 추가해주세요")
+                                        .font(.system(size: 20, weight: .bold, design: .rounded))
+                                        .foregroundColor(.white)
+                                        .opacity(0.6)
+                                        .multilineTextAlignment(.center)
+                                    Text("👇")
+                                        .font(.system(size: 50))
+                                }
+                            }else {
+                                ForEach(studySet[index]){index in
+                                    Divider()
+                                    StudyCellView(mystudy: index)
+                                        .padding(.horizontal)
+                                }
+                            }
                         }
+                            else if changelist {
+                                if errorSet[index].isEmpty{
+                                    Spacer().frame(height: 30)
+                                    VStack {
+                                        Text("\"내용추가하기\" 버튼을 눌러\n내용을 추가해주세요")
+                                            .font(.system(size: 20, weight: .bold, design: .rounded))
+                                            .foregroundColor(.white)
+                                            .opacity(0.6)
+                                            .multilineTextAlignment(.center)
+                                        Text("👇")
+                                            .font(.system(size: 50))
+                                    }
+                                }else {
+                                    ForEach(errorSet[index]){index in
+                                        Divider()
+                                        StudyCellView(mystudy: index)
+                                            .padding(.horizontal)
+                                    }
+                                }
+                            }
+                        
+                        Spacer().frame(height: 20)
+                        
+                        Button {
+                            print("hello world")
+                        } label: {
+                            ZStack {
+                                RoundedRectangle(cornerRadius: 17)
+                                    .frame(width: 355, height: 55, alignment: .center)
+                                    .foregroundColor(.buttonColor)
+                                    .padding(.horizontal)
+                                Text("내용 추가하기")
+                                    .font(.system(size: 18, weight: .medium, design: .rounded))
+                                    .foregroundColor(.gray)
+                            }
+                        }
+
+
                     }
                     Spacer()
                 }

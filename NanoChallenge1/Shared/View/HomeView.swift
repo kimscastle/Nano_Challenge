@@ -133,7 +133,7 @@ struct HomeView: View {
                                         .foregroundColor(.buttonColor)
                                         .padding(.horizontal)
                                     Text("모두보기")
-                                        .font(.system(size: 20, weight: .medium, design: .rounded))
+                                        .font(.system(size: 18, weight: .medium, design: .rounded))
                                         .foregroundColor(.gray)
                                 }
                             }

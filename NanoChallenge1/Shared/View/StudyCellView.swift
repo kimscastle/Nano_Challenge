@@ -18,14 +18,13 @@ struct StudyCellView: View {
             Spacer().frame(width: 15)
             VStack(alignment: .leading){
                 Text(mystudy.title)
-                    .font(.system(size: 15, weight: .bold, design: .rounded))
+                    .font(.system(size: 17, weight: .bold, design: .rounded))
                     .foregroundColor(.white)
                     .opacity(0.8)
-                    .lineLimit(2)
-                    .multilineTextAlignment(.leading)
+                    .lineLimit(1)
                 Spacer().frame(height: 5)
                 Text(mystudy.date)
-                    .font(.system(size: 10, weight: .medium, design: .rounded))
+                    .font(.system(size: 12, weight: .medium, design: .rounded))
                     .foregroundColor(.gray)
                     .opacity(0.8)
             }

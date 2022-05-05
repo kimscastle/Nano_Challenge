@@ -103,14 +103,79 @@ let refSet: [[ReferenceSub]] = [refsublist1, test1, test2, test3, test4, test5]
 let study1: [Mystudy] = [
     Mystudy(image: Image("blueicon"), title: "SwiftUI Study - Text✏️", date: "4월 20일(목요일) - SwiftUI Study Book"),
     Mystudy(image: Image("grayicon"), title: "SwiftUI Study - Image🎨", date: "4월 21일(금요일) - SwiftUI Study Book"),
-    Mystudy(image: Image("blueicon"), title: "SwiftUI Study - Stack📚", date: "4월 22일(토요일) - SwiftUI Study Book")
+    Mystudy(image: Image("orangeicon"), title: "SwiftUI Study - Stack📚", date: "4월 22일(토요일) - SwiftUI Study Book"),
+    Mystudy(image: Image("redicon"), title: "SwiftUI Study - List📝", date: "4월 22일(일요일) - SwiftUI Study Book")
 ]
+
+let study2: [Mystudy] = [
+    Mystudy(image: Image("yellowicon"), title: "SwiftUI Example - @State@Binding✏️", date: "4월 23일(월요일) - 다양한 SwiftUI Examples Book"),
+    Mystudy(image: Image("grayicon"), title: "SwiftUI Example - ForEach🎨", date: "4월 24일(화요일) - 다양한 SwiftUI Examples Book"),
+    Mystudy(image: Image("pinkicon"), title: "SwiftUI Example - NavigationView📚", date: "4월 25일(수요일) - 다양한 SwiftUI Examples Book")
+]
+
+let study3: [Mystudy] = [
+    Mystudy(image: Image("purpleicon"), title: "Python Study - Function✏️", date: "4월 26일(목요일) - Python의 기초와 응용"),
+    Mystudy(image: Image("redicon"), title: "Python Study - Class와 객체🎨", date: "4월 27일(금요일) - Python의 기초와 응용"),
+    Mystudy(image: Image("blueicon"), title: "Python Study - Array마스터하기📚", date: "4월 28일(토요일) - Python의 기초와 응용"),
+    Mystudy(image: Image("yellowicon"), title: "Python Study - 일급객체함수란?📚", date: "4월 29일(일요일) - Python의 기초와 응용")
+]
+
+let study4: [Mystudy] = [
+    Mystudy(image: Image("blueicon"), title: "Django Study - 통신의 종류✏️", date: "4월 30일(월요일) - Django로 배우는 백엔드 기초"),
+    Mystudy(image: Image("grayicon"), title: "Django Study - What is \"REST API\"?🎨", date: "5월 1일(화요일) - Django로 배우는 백엔드 기초")
+]
+
+let study5: [Mystudy] = [
+//    Mystudy(image: Image("blueicon"), title: "SwiftUI Study - Text✏️", date: "4월 20일(목요일) - SwiftUI Study Book"),
+//    Mystudy(image: Image("grayicon"), title: "SwiftUI Study - Image🎨", date: "4월 21일(금요일) - SwiftUI Study Book"),
+//    Mystudy(image: Image("orangeicon"), title: "SwiftUI Study - Stack📚", date: "4월 22일(토요일) - SwiftUI Study Book")
+]
+
+let study6: [Mystudy] = [
+//    Mystudy(image: Image("blueicon"), title: "SwiftUI Study - Text✏️", date: "4월 20일(목요일) - SwiftUI Study Book"),
+//    Mystudy(image: Image("grayicon"), title: "SwiftUI Study - Image🎨", date: "4월 21일(금요일) - SwiftUI Study Book"),
+//    Mystudy(image: Image("orangeicon"), title: "SwiftUI Study - Stack📚", date: "4월 22일(토요일) - SwiftUI Study Book")
+]
+
+let studySet: [[Mystudy]] = [study1, study2, study3, study4, study5, study6]
 
 let error1: [Mystudy] = [
     Mystudy(image: Image("erroricon"), title: "Button이 안눌리고 Text만 눌릴 때", date: "4월 20일(목요일) - SwiftUI Study Book"),
     Mystudy(image: Image("erroricon"), title: "Binding Type에서 Error가 날 때", date: "4월 21일(금요일) - SwiftUI Study Book"),
     Mystudy(image: Image("erroricon"), title: "SwiftUI Stack이 안 보일 때", date: "4월 22일(토요일) - SwiftUI Study Book")
 ]
+
+let error2: [Mystudy] = [
+    Mystudy(image: Image("erroricon"), title: "Button이 안눌리고 Text만 눌릴 때", date: "4월 20일(목요일) - SwiftUI Study Book"),
+    Mystudy(image: Image("erroricon"), title: "Binding Type에서 Error가 날 때", date: "4월 21일(금요일) - SwiftUI Study Book"),
+    Mystudy(image: Image("erroricon"), title: "SwiftUI Stack이 안 보일 때", date: "4월 22일(토요일) - SwiftUI Study Book")
+]
+
+let error3: [Mystudy] = [
+    Mystudy(image: Image("erroricon"), title: "Button이 안눌리고 Text만 눌릴 때", date: "4월 20일(목요일) - SwiftUI Study Book"),
+    Mystudy(image: Image("erroricon"), title: "Binding Type에서 Error가 날 때", date: "4월 21일(금요일) - SwiftUI Study Book"),
+    Mystudy(image: Image("erroricon"), title: "SwiftUI Stack이 안 보일 때", date: "4월 22일(토요일) - SwiftUI Study Book")
+]
+
+let error4: [Mystudy] = [
+    Mystudy(image: Image("erroricon"), title: "Button이 안눌리고 Text만 눌릴 때", date: "4월 20일(목요일) - SwiftUI Study Book"),
+    Mystudy(image: Image("erroricon"), title: "Binding Type에서 Error가 날 때", date: "4월 21일(금요일) - SwiftUI Study Book"),
+    Mystudy(image: Image("erroricon"), title: "SwiftUI Stack이 안 보일 때", date: "4월 22일(토요일) - SwiftUI Study Book")
+]
+
+let error5: [Mystudy] = [
+//    Mystudy(image: Image("erroricon"), title: "Button이 안눌리고 Text만 눌릴 때", date: "4월 20일(목요일) - SwiftUI Study Book"),
+//    Mystudy(image: Image("erroricon"), title: "Binding Type에서 Error가 날 때", date: "4월 21일(금요일) - SwiftUI Study Book"),
+//    Mystudy(image: Image("erroricon"), title: "SwiftUI Stack이 안 보일 때", date: "4월 22일(토요일) - SwiftUI Study Book")
+]
+
+let error6: [Mystudy] = [
+//    Mystudy(image: Image("erroricon"), title: "Button이 안눌리고 Text만 눌릴 때", date: "4월 20일(목요일) - SwiftUI Study Book"),
+//    Mystudy(image: Image("erroricon"), title: "Binding Type에서 Error가 날 때", date: "4월 21일(금요일) - SwiftUI Study Book"),
+//    Mystudy(image: Image("erroricon"), title: "SwiftUI Stack이 안 보일 때", date: "4월 22일(토요일) - SwiftUI Study Book")
+]
+
+let errorSet: [[Mystudy]] = [error1, error2, error3, error4, error5, error6]
 
 extension Color{
     static let primaryblue = Color("primaryblue")
