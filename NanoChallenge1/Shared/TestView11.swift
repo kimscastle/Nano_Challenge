@@ -25,7 +25,12 @@ struct TestView11: View {
                         .padding(.horizontal)
                 }
             }
-
         }
+    }
+}
+
+struct TestView11_Previews: PreviewProvider {
+    static var previews: some View {
+        TestView11(book: .init(backGroundColor: Color("red"), subject: "ddd", title: "ddd"))
     }
 }

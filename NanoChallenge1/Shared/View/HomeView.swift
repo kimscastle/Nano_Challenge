@@ -102,11 +102,8 @@ struct HomeView: View {
                                                 .font(.system(size: 10, weight: .semibold, design: .rounded))
                                                 .foregroundColor(.white)
                                         }
-    //                                    .padding()
-    //                                    Spacer()
                                     }
                                 }
-
                             }
                         }
                         

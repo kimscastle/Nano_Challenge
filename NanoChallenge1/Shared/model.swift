@@ -47,6 +47,16 @@ let refmainlist: [ReferenceMain] = [
     ReferenceMain(backGroundColor: .backgroundReverse, image: Image("Kavsoft_Icon"), tag: "swiftUI 강의", title: "SwiftUI를 공부할수있는 무료사이트🇰🇷", explain: "SwiftUI의 다양한 디자인을 무료 영상으로 공부할 수 있는 사이트(유튜브있음)", url: "https://kavsoft.dev/")
 ]
 
+let refalllist: [ReferenceMain] = [
+    ReferenceMain(backGroundColor: .primaryblue, image: Image("redicon"), tag: "swiftUI 공식문서", title: "SwiftUI의 모든 것🍎(영어 원서 주의)", explain: "SwiftUI의 기능이 설명되어있는 Apple의 공식 문서", url: "https://developer.apple.com/kr/xcode/swiftui/"),
+    ReferenceMain(backGroundColor: .appyellow, image: Image("blueicon"), tag: "swiftUI 공식문서", title: "swiftUI 공식 튜토리얼🍎", explain: "SwiftUI의 기능들을 한번씩 사용해서 완성된 View를 완성해볼 수 있는 공식 Tutorial document", url: "https://developer.apple.com/tutorials/swiftui/"),
+    ReferenceMain(backGroundColor: .appgray2, image: Image("pinkicon"), tag: "swiftUI 강의", title: "swiftUI DesignCode사이트💻", explain: "SwiftUI로 만든 다양한 디자인을 경험하고 구현할수있는 강의 제공(유료)", url: "https://designcode.io/"),
+    ReferenceMain(backGroundColor: .appgray1, image: Image("yellowicon"), tag: "swiftUI 강의", title: "SwiftUI의 아티클과 동영상강의(구독형)📱", explain: "SwiftUI의 다양한 기능들을 문서와 영상강의로 제공해주는 사이트(구독형 유료)", url: "https://www.raywenderlich.com/"),
+    ReferenceMain(backGroundColor: .apporange, image: Image("orangeicon"), tag: "swiftUI 강의", title: "swiftUI의 아티클과 동영상강의(구독형)📖", explain: "SwiftUI의 다양한 디자인과 레퍼런스 강의를 제공해주는 사이트(구독형 유료)", url: "https://trailingclosure.com/"),
+    ReferenceMain(backGroundColor: .appred, image: Image("purpleicon"), tag: "swiftUI 아티클형 강의", title: "swiftUI 튜토리얼 한글 설명✏️", explain: "SwiftUI공부를 하는 한국사람이라면 한번쯤은 들어가 봤을 서근개발노트", url: "https://seons-dev.tistory.com/"),
+    ReferenceMain(backGroundColor: .backgroundReverse, image: Image("grayicon"), tag: "swiftUI 강의", title: "SwiftUI를 공부할수있는 무료사이트🇰🇷", explain: "SwiftUI의 다양한 디자인을 무료 영상으로 공부할 수 있는 사이트(유튜브있음)", url: "https://kavsoft.dev/")
+]
+
 let test1: [ReferenceSub] = [
     ReferenceSub(backGroundColor: .primaryblue, image: Image("SwiftUI_Icon"), title: "Test1"),
     ReferenceSub(backGroundColor: .apporange, image: Image("Ray_Icon"), title: "Test2"),
