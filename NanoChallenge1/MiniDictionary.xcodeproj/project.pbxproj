@@ -48,8 +48,8 @@
 		C08756192822BABF002BC996 /* CarouselCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCellView.swift; sourceTree = "<group>"; };
 		C0B7233A281F9FA1002CCFB0 /* NanoChallenge1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanoChallenge1App.swift; sourceTree = "<group>"; };
 		C0B7233C281F9FA2002CCFB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C0B72341281F9FA2002CCFB0 /* NanoChallenge1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanoChallenge1.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0B72347281F9FA2002CCFB0 /* NanoChallenge1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanoChallenge1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0B72341281F9FA2002CCFB0 /* MiniDictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniDictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0B72347281F9FA2002CCFB0 /* MiniDictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniDictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0B72359281FA651002CCFB0 /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
 		C0B7235F281FC649002CCFB0 /* BookListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,8 +97,8 @@
 		C0B72342281F9FA2002CCFB0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C0B72341281F9FA2002CCFB0 /* NanoChallenge1.app */,
-				C0B72347281F9FA2002CCFB0 /* NanoChallenge1.app */,
+				C0B72341281F9FA2002CCFB0 /* MiniDictionary.app */,
+				C0B72347281F9FA2002CCFB0 /* MiniDictionary.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,9 +122,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C0B72340281F9FA2002CCFB0 /* NanoChallenge1 (iOS) */ = {
+		C0B72340281F9FA2002CCFB0 /* MiniDictionary (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C0B72352281F9FA2002CCFB0 /* Build configuration list for PBXNativeTarget "NanoChallenge1 (iOS)" */;
+			buildConfigurationList = C0B72352281F9FA2002CCFB0 /* Build configuration list for PBXNativeTarget "MiniDictionary (iOS)" */;
 			buildPhases = (
 				C0B7233D281F9FA2002CCFB0 /* Sources */,
 				C0B7233E281F9FA2002CCFB0 /* Frameworks */,
@@ -134,16 +134,16 @@
 			);
 			dependencies = (
 			);
-			name = "NanoChallenge1 (iOS)";
+			name = "MiniDictionary (iOS)";
 			packageProductDependencies = (
 			);
 			productName = "NanoChallenge1 (iOS)";
-			productReference = C0B72341281F9FA2002CCFB0 /* NanoChallenge1.app */;
+			productReference = C0B72341281F9FA2002CCFB0 /* MiniDictionary.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C0B72346281F9FA2002CCFB0 /* NanoChallenge1 (macOS) */ = {
+		C0B72346281F9FA2002CCFB0 /* MiniDictionary (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C0B72355281F9FA2002CCFB0 /* Build configuration list for PBXNativeTarget "NanoChallenge1 (macOS)" */;
+			buildConfigurationList = C0B72355281F9FA2002CCFB0 /* Build configuration list for PBXNativeTarget "MiniDictionary (macOS)" */;
 			buildPhases = (
 				C0B72343281F9FA2002CCFB0 /* Sources */,
 				C0B72344281F9FA2002CCFB0 /* Frameworks */,
@@ -153,9 +153,9 @@
 			);
 			dependencies = (
 			);
-			name = "NanoChallenge1 (macOS)";
+			name = "MiniDictionary (macOS)";
 			productName = "NanoChallenge1 (macOS)";
-			productReference = C0B72347281F9FA2002CCFB0 /* NanoChallenge1.app */;
+			productReference = C0B72347281F9FA2002CCFB0 /* MiniDictionary.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -176,7 +176,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C0B72338281F9FA1002CCFB0 /* Build configuration list for PBXProject "NanoChallenge1" */;
+			buildConfigurationList = C0B72338281F9FA1002CCFB0 /* Build configuration list for PBXProject "MiniDictionary" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -191,8 +191,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C0B72340281F9FA2002CCFB0 /* NanoChallenge1 (iOS) */,
-				C0B72346281F9FA2002CCFB0 /* NanoChallenge1 (macOS) */,
+				C0B72340281F9FA2002CCFB0 /* MiniDictionary (iOS) */,
+				C0B72346281F9FA2002CCFB0 /* MiniDictionary (macOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -388,7 +388,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = NanoChallenge1.NanoChallenge1;
-				PRODUCT_NAME = NanoChallenge1;
+				PRODUCT_NAME = MiniDictionary;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -418,7 +418,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = NanoChallenge1.NanoChallenge1;
-				PRODUCT_NAME = NanoChallenge1;
+				PRODUCT_NAME = MiniDictionary;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -449,7 +449,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = NanoChallenge1.NanoChallenge1;
-				PRODUCT_NAME = NanoChallenge1;
+				PRODUCT_NAME = MiniDictionary;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -478,7 +478,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = NanoChallenge1.NanoChallenge1;
-				PRODUCT_NAME = NanoChallenge1;
+				PRODUCT_NAME = MiniDictionary;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -488,7 +488,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C0B72338281F9FA1002CCFB0 /* Build configuration list for PBXProject "NanoChallenge1" */ = {
+		C0B72338281F9FA1002CCFB0 /* Build configuration list for PBXProject "MiniDictionary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C0B72350281F9FA2002CCFB0 /* Debug */,
@@ -497,7 +497,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C0B72352281F9FA2002CCFB0 /* Build configuration list for PBXNativeTarget "NanoChallenge1 (iOS)" */ = {
+		C0B72352281F9FA2002CCFB0 /* Build configuration list for PBXNativeTarget "MiniDictionary (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C0B72353281F9FA2002CCFB0 /* Debug */,
@@ -506,7 +506,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C0B72355281F9FA2002CCFB0 /* Build configuration list for PBXNativeTarget "NanoChallenge1 (macOS)" */ = {
+		C0B72355281F9FA2002CCFB0 /* Build configuration list for PBXNativeTarget "MiniDictionary (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C0B72356281F9FA2002CCFB0 /* Debug */,
