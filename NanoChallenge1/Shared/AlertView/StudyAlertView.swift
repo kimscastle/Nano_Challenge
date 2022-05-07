@@ -20,13 +20,13 @@ struct StudyAlertVIew: View {
     
     func MakeAddStudy(){
         let newStudy = Mystudy(image: imageset[randomIndex1], title: title, date: date)
+        
         study5.append(newStudy)
         studySet[4] = study5
-
         self.title = ""
         self.date = ""
+        //initialize
         self.isAddNewStudy.toggle()
-    
     }
     
     var alertTitle: String = "주제와 날짜를 적어주세요"
@@ -87,7 +87,6 @@ struct StudyAlertVIew: View {
                             .foregroundColor(.white)
                     }
                 }
-
             }
             Spacer()
             
@@ -99,11 +98,8 @@ struct StudyAlertVIew: View {
                     .underline()
                     .foregroundColor(.white)
                     .opacity(0.5)
-
             }
             Spacer()
-
-            
         }
         .padding()
         .frame(width: screenSize.width*0.75, height: screenSize.height * 0.37)

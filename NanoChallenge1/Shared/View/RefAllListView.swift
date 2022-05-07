@@ -15,13 +15,11 @@ struct RefAllListView: View {
         NavigationView {
             ZStack {
                 Color.background.ignoresSafeArea(.all)
-
                 ScrollView {
                     HStack {
                         Button {
                             goAllref.toggle()
                         } label: {
-                            
                             VStack {
                                 Image(systemName: "chevron.left")
                                     .resizable()
@@ -33,7 +31,6 @@ struct RefAllListView: View {
                         }
                         Spacer().frame(width: 330)
                     }
-
                     Spacer().frame(height: 30)
                     VStack(alignment: .leading) {
                         VStack(alignment: .leading) {
