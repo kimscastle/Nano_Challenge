@@ -37,9 +37,9 @@ struct ReferenceSubCellView: View {
     }
 }
 
-struct ReferenceSubCellView_Previews: PreviewProvider {
-    @State static var refsubcell: ReferenceSub = ReferenceSub(backGroundColor: .appred, image: Image("testimg"), title: "내이름은 김의성😀")
-    static var previews: some View {
-        ReferenceSubCellView(refsubcell: refsubcell)
-    }
-}
+//struct ReferenceSubCellView_Previews: PreviewProvider {
+//    @State static var refsubcell: ReferenceSub = ReferenceSub(backGroundColor: .appred, image: Image("testimg"), title: "내이름은 김의성😀")
+//    static var previews: some View {
+//        ReferenceSubCellView(refsubcell: refsubcell)
+//    }
+//}

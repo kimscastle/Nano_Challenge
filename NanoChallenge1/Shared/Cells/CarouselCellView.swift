@@ -24,7 +24,6 @@ struct CarouselCellView: View {
                     .frame(width: 200, height: 120)
                 }
             })
-
             
             Text(mainref.tag)
                 .font(.system(size: 13, weight: .medium, design: .rounded))

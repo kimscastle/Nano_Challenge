@@ -10,7 +10,6 @@ import SwiftUI
 struct BookListCellView: View {
     let book: Mybook
     
-    
     var body: some View {
             VStack(alignment: .leading) {
                 ZStack {
@@ -35,10 +34,4 @@ struct BookListCellView: View {
         }
     }
 }
-//
-//struct BookListCellView_Previews: PreviewProvider {
-//    @State static var booklist: MybookList = MybookList(backGroundColor: .yellow, summary: "one", explain: "My name is One")
-//    static var previews: some View {
-//        BookListCellView(booklist: $booklist)
-//    }
-//}
+

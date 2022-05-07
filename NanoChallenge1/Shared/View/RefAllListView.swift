@@ -7,12 +7,10 @@
 
 import SwiftUI
 
-struct BookDetailView: View {
+struct RefAllListView: View {
+
     @Binding var goAllref: Bool
-//
-//    init(){
-//        UIScrollView.appearance().backgroundColor = UIColor(Color.background)
-//    }
+
     var body: some View {
         NavigationView {
             ZStack {
@@ -64,6 +62,6 @@ struct BookDetailView: View {
 
 struct BookDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        BookDetailView(goAllref: .constant(false))
+        RefAllListView(goAllref: .constant(false))
     }
 }

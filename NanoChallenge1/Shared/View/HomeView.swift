@@ -19,12 +19,7 @@ struct HomeView: View {
     @State var randomIndex: Int = 0
     @State var isAddNewBook = false
     @State var goTest1View = false
-    
     @State var goHome = false
-    
-//    @Binding var color: String
-//    @Binding var subject: String
-//    @Binding var title: String
     
     var body: some View {
 
@@ -50,7 +45,7 @@ struct HomeView: View {
                         ScrollView(.horizontal, showsIndicators: false) {
                             HStack(alignment: .top, spacing:20) {
                                 ForEach(mybooklists, id: \.self) { book in
-                                    NavigationLink(destination: TestView11(book: book, index: mybooklists.firstIndex(of: book)!).navigationBarBackButtonHidden(true)){
+                                    NavigationLink(destination: BookDetailVIew(book: book, index: mybooklists.firstIndex(of: book)!).navigationBarBackButtonHidden(true)){
                                         BookListCellView(book: book)
                                         
                                     }
@@ -109,8 +104,6 @@ struct HomeView: View {
                         
                         Spacer().frame(height: 30)
 
-                        
-                        
                         VStack(alignment: .leading) {
                             Text("다양한 레퍼런스")
                                 .font(.system(size: 22, weight: .bold, design: .rounded))
@@ -147,7 +140,7 @@ struct HomeView: View {
                     BookInfoAlertVIew(randomIndex: $randomIndex, mybooklists: $mybooklists, isAddNewBook: $isAddNewBook)
                 }
                 if goAllref{
-                    BookDetailView(goAllref: $goAllref)
+                    RefAllListView(goAllref: $goAllref)
                 }
             }
         }

@@ -112,9 +112,3 @@ struct BookInfoAlertVIew: View {
         .shadow(color: .black, radius: 10)
     }
 }
-
-//struct BookInfoAlertVIew_Previews: PreviewProvider {
-//    static var previews: some View {
-//        BookInfoAlertVIew(randomIndex: 1, mybooklists: .constant([Mybook(backGroundColor: .appgray2, subject: "subject", title: "title")]), isAddNewBook: .constant(true))
-//    }
-//}

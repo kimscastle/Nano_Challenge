@@ -35,8 +35,8 @@ struct AllRefCellView: View {
     }
 }
 
-struct AllRefCellView_Previews: PreviewProvider {
-    static var previews: some View {
-        AllRefCellView(refcell: .init(backGroundColor: Color(.red), image: Image("redicon"), tag: "", title: "ddddddddddddddd", explain: "ddddddddddddddddddddddddd", url: ""))
-    }
-}
+//struct AllRefCellView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        AllRefCellView(refcell: .init(backGroundColor: Color(.red), image: Image("redicon"), tag: "", title: "ddddddddddddddd", explain: "ddddddddddddddddddddddddd", url: ""))
+//    }
+//}

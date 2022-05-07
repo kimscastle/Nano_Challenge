@@ -7,8 +7,10 @@
 
 import SwiftUI
 
-struct TestView11: View {
+struct BookDetailVIew: View {
     @Environment(\.presentationMode) var presentationMode
+    //navigationView에서 backButton만들때 쓰는 환경변수
+    
     @State var studySet: [[Mystudy]] = [study1, study2, study3, study4, study5, study6]
     @State var changelist: Bool = false
     @State var isAddNewStudy = false
@@ -17,7 +19,9 @@ struct TestView11: View {
     
     var book: Mybook
     var index: Int = 0
+    
     let screenSize = UIScreen.main.bounds
+    
     var body: some View {
         
         NavigationView {
@@ -168,6 +172,6 @@ struct TestView11: View {
 
 struct TestView11_Previews: PreviewProvider {
     static var previews: some View {
-        TestView11(book: .init(backGroundColor: Color("red"), subject: "ddd", title: "ddd", emoji: "📕"))
+        BookDetailVIew(book: .init(backGroundColor: Color("red"), subject: "ddd", title: "ddd", emoji: "📕"))
     }
 }
