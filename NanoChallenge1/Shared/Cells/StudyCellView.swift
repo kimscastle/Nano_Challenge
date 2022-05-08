@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct StudyCellView: View {
+    
     let mystudy: Mystudy
+    
     var body: some View {
         HStack{
             mystudy.image

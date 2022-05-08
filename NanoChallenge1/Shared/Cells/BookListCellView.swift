@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct BookListCellView: View {
+    
     let book: Mybook
     
     var body: some View {

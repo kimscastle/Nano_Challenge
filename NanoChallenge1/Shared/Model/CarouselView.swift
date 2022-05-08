@@ -16,7 +16,6 @@ struct CarouselView: View {
     var itemHeight:CGFloat
     var views:[AnyView]
     
-    
     private func onDragEnded(drag: DragGesture.Value) {
         print("drag ended")
         let dragThreshold:CGFloat = 200
@@ -27,8 +26,6 @@ struct CarouselView: View {
             carouselLocation =  carouselLocation + 1
         }
     }
-    
-    
     
     var body: some View {
         ZStack{

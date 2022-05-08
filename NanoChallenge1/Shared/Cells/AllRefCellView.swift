@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct AllRefCellView: View {
+    
     let refcell: ReferenceMain
+    
     var body: some View {
         HStack{
             refcell.image

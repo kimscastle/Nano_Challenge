@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct ReferenceSubCellView: View {
+    
     let screenSize = UIScreen.main.bounds
     let refsubcell: ReferenceSub
+    
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 15)

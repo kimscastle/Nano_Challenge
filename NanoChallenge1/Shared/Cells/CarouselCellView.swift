@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct CarouselCellView: View {
+    
     let mainref: ReferenceMain
+    
     var body: some View {
         VStack(alignment: .leading){
             
