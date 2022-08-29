@@ -7,9 +7,12 @@
 
 import UIKit
 
+var surveyResult: String = ""
+var totalResult = [Dictionary<String, Double>.Element]()
+
 class ViewController: UIViewController {
     
-    let myModel = MyModel()
+    let myModel = aa()
     
     let myQusetionList: [String] = [
         "나는 다른사람이 강하게 맞다고 주장하면 납득하는 편이다",
@@ -73,7 +76,6 @@ class ViewController: UIViewController {
             guard let uvc = self.storyboard?.instantiateViewController(withIdentifier: "second") else { return }
             uvc.modalTransitionStyle = UIModalTransitionStyle.coverVertical
             self.present(uvc, animated: true)
-            
             makeInit()
         } else {
             questionIndex += 1
@@ -111,12 +113,15 @@ extension ViewController {
         questionIndex = 0
         chosedButtonList = []
     }
-    
+     
     func presentMyResult() {
-        let surveyInout = MyModelInput(one: Double(chosedButtonList[0]), two: Double(chosedButtonList[1]), three: Double(chosedButtonList[2]), four: Double(chosedButtonList[3]), five: Double(chosedButtonList[4]), six: Double(chosedButtonList[5]), seven: Double(chosedButtonList[6]))
+        let surveyInout = aaInput(one: Double(chosedButtonList[0]), two: Double(chosedButtonList[1]), three: Double(chosedButtonList[2]), four: Double(chosedButtonList[3]), five: Double(chosedButtonList[4]), six: Double(chosedButtonList[5]), seven: Double(chosedButtonList[6]))
 
         if let myResult = try? myModel.prediction(input: surveyInout) {
+            surveyResult = myResult.result
+            totalResult = myResult.resultProbability.sorted(by: {$0.value > $1.value})
             print(myResult.result)
+            print(myResult.resultProbability)
         }
     }
 }
