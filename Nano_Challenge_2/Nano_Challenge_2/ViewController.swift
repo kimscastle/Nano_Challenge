@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    let myModel = MyModel()
+    
     let myQusetionList: [String] = [
         "나는 다른사람이 강하게 맞다고 주장하면 납득하는 편이다",
         "나는 주말엔 집에서 있는걸 선호하는 편이다",
@@ -66,8 +68,12 @@ class ViewController: UIViewController {
         nextButton.setTitle( questionIndex == beforeLastIndex ? "제출후 확인" : "다음질문", for: .normal)
 
         if questionIndex == lastIndex {
-            //결과보여주기
+            presentMyResult()
             //모달창띄우기
+            guard let uvc = self.storyboard?.instantiateViewController(withIdentifier: "second") else { return }
+            uvc.modalTransitionStyle = UIModalTransitionStyle.coverVertical
+            self.present(uvc, animated: true)
+            
             makeInit()
         } else {
             questionIndex += 1
@@ -104,6 +110,14 @@ extension ViewController {
     func makeInit() {
         questionIndex = 0
         chosedButtonList = []
+    }
+    
+    func presentMyResult() {
+        let surveyInout = MyModelInput(one: Double(chosedButtonList[0]), two: Double(chosedButtonList[1]), three: Double(chosedButtonList[2]), four: Double(chosedButtonList[3]), five: Double(chosedButtonList[4]), six: Double(chosedButtonList[5]), seven: Double(chosedButtonList[6]))
+
+        if let myResult = try? myModel.prediction(input: surveyInout) {
+            print(myResult.result)
+        }
     }
 }
 
