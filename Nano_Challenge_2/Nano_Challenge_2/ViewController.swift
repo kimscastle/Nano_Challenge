@@ -20,6 +20,14 @@ class ViewController: UIViewController {
     ]
     
     var questionIndex = 0
+    
+    var beforeLastIndex: Int {
+        myQusetionList.count - 2
+    }
+    
+    var lastIndex: Int {
+        myQusetionList.count - 1
+    }
 
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet var surveyResponseButtons: [UIButton]!
@@ -54,8 +62,16 @@ class ViewController: UIViewController {
         print(chosedButtonList)
         surveyResponseButtons.forEach { makeNonActiveButton($0) }
         self.chosedButton = nil
-    
-        questionIndex += 1
+
+        nextButton.setTitle( questionIndex == beforeLastIndex ? "제출후 확인" : "다음질문", for: .normal)
+
+        if questionIndex == lastIndex {
+            //결과보여주기
+            //모달창띄우기
+            makeInit()
+        } else {
+            questionIndex += 1
+        }
         questionLabel.text = myQusetionList[questionIndex]
         
         
@@ -83,6 +99,11 @@ extension ViewController {
         button.setImage(actImage, for: .normal)
         button.tintColor = UIColor.systemBlue
         button.setTitleColor(.black, for: .normal)
+    }
+    
+    func makeInit() {
+        questionIndex = 0
+        chosedButtonList = []
     }
 }
 
