@@ -24,7 +24,10 @@ class SecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         downRec.layer.cornerRadius = 3
+        mainBacgroundView.backgroundColor = #colorLiteral(red: 0.8470588326, green: 0.8470588326, blue: 0.8470588326, alpha: 1)
+        pagukBackgroundView.backgroundColor = #colorLiteral(red: 0.8470588326, green: 0.8470588326, blue: 0.8470588326, alpha: 1)
         mainBacgroundView.layer.cornerRadius = 20
         pagukBackgroundView.layer.cornerRadius = 20
         myResultLabel.text = surveyResult
@@ -41,7 +44,7 @@ class SecondViewController: UIViewController {
         case 60..<100 :
             goodMent.text = "우리 혹시...천생연분?"
         default:
-            "우리 맞기는 한걸까...?"
+            goodMent.text = "우리 맞기는 한걸까...?"
         }
         
         switch (totalResult[totalResult.count - 1].value) * 100 {
@@ -54,7 +57,7 @@ class SecondViewController: UIViewController {
         case 20..<30 :
             badMent.text = "이정도면 파국은 아닐지도...?"
         default:
-            "이정도면 안 맞는건 아닌데...?"
+            badMent.text = "이정도면 안 맞는건 아닌데...?"
         }
 
     }

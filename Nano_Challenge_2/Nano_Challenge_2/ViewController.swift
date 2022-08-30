@@ -47,6 +47,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         questionCount.text = "Question 1 / \(myQusetionList.count)"
         questionLabel.text = myQusetionList[0]
         
@@ -57,12 +58,13 @@ class ViewController: UIViewController {
         
         view.addSubview(nextButton)
         nextButton.makeRoundButton()
+        nextButton.backgroundColor = #colorLiteral(red: 0.8470588326, green: 0.8470588326, blue: 0.8470588326, alpha: 1)
     }
     
     @IBAction func responseButtons(_ sender: UIButton) {
         //버튼을 누르면 누른버튼을 인식하고 다음질문버튼이 활성화됨
         chosedButton = sender.tag
-        nextButton.backgroundColor = (chosedButton == nil) ? .systemGray2 : .systemBlue
+        nextButton.backgroundColor = (chosedButton == nil) ? .systemGray4 : .systemBlue
         
         //버튼을 누르면 누른것만 acive상태로 만들고 나머지는 다 non-acive상태로 바꿈
         makeActiveButton(sender)
@@ -80,7 +82,7 @@ class ViewController: UIViewController {
         //다음버튼을 누르면 현재 누른 설문조사 결과가 저장되고 다음질문을 non-acitve상태로 바꿔줌
         chosedButtonList.append(chosedButton)
         self.chosedButton = nil
-        sender.backgroundColor = .systemGray2
+        sender.backgroundColor = #colorLiteral(red: 0.8470588326, green: 0.8470588326, blue: 0.8470588326, alpha: 1)
         
         //다음 질문으로 넘어가면 모든 버튼이 비활성화 되어야함
         surveyResponseButtons.forEach { makeNonActiveButton($0) }
@@ -102,9 +104,6 @@ class ViewController: UIViewController {
             questionCount.text = "Qusetion \(questionIndex + 1) / \(myQusetionList.count)"
         }
         questionLabel.text = myQusetionList[questionIndex]
-        
-        
-        
     }
     
 }
@@ -115,10 +114,10 @@ extension ViewController {
         let nonActImage = UIImage(systemName: "circle.fill", withConfiguration: config)
         button.layer.cornerRadius = 28
         button.layer.borderWidth = 2
-        button.layer.borderColor = UIColor.systemGray2.cgColor
+        button.layer.borderColor = #colorLiteral(red: 0.8470588326, green: 0.8470588326, blue: 0.8470588326, alpha: 1).cgColor
         button.setImage(nonActImage, for: .normal)
-        button.tintColor = UIColor.systemGray2
-        button.setTitleColor(UIColor.systemGray2, for: .normal)
+        button.tintColor = #colorLiteral(red: 0.8470588326, green: 0.8470588326, blue: 0.8470588326, alpha: 1)
+        button.setTitleColor( #colorLiteral(red: 0.8470588326, green: 0.8470588326, blue: 0.8470588326, alpha: 1) , for: .normal)
     }
     
     func makeActiveButton(_ button: UIButton) {

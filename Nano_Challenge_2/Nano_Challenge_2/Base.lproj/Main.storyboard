@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Smu-Ip-1K6">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -9,11 +9,84 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Launch View Controller-->
+        <scene sceneID="Wls-i0-MM9">
+            <objects>
+                <viewController id="Smu-Ip-1K6" customClass="LaunchViewController" customModule="Nano_Challenge_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a2t-v3-pyU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vh0-b9-lOx">
+                                <rect key="frame" x="45" y="722" width="324" height="56"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="3D6-f3-Rou"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="내 진국조합🥘 찾기">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="aaa:" destination="Smu-Ip-1K6" eventType="touchUpInside" id="Cyz-TC-PFn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이 안에 너...있다" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yau-94-LjT">
+                                <rect key="frame" x="40" y="194" width="334" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="PG6-Ou-F7O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나와 맞는 멘토찾기 프로젝트" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYJ-HL-Fp2">
+                                <rect key="frame" x="40" y="259" width="334" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="fQj-t9-pJR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main" translatesAutoresizingMaskIntoConstraints="NO" id="f6i-aP-byT">
+                                <rect key="frame" x="57" y="292" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="HBH-Mb-eL2"/>
+                                    <constraint firstAttribute="height" constant="300" id="LLU-K0-dcA"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Yaa-Bf-9aV"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Yaa-Bf-9aV" firstAttribute="trailing" secondItem="bYJ-HL-Fp2" secondAttribute="trailing" constant="40" id="Ccv-ry-ph7"/>
+                            <constraint firstItem="Yaa-Bf-9aV" firstAttribute="bottom" secondItem="vh0-b9-lOx" secondAttribute="bottom" constant="84" id="Eno-9k-aHl"/>
+                            <constraint firstItem="bYJ-HL-Fp2" firstAttribute="top" secondItem="Yau-94-LjT" secondAttribute="bottom" constant="5" id="KXh-Nh-QVQ"/>
+                            <constraint firstItem="Yaa-Bf-9aV" firstAttribute="trailing" secondItem="Yau-94-LjT" secondAttribute="trailing" constant="40" id="MhL-Ug-Hc3"/>
+                            <constraint firstItem="Yaa-Bf-9aV" firstAttribute="trailing" secondItem="vh0-b9-lOx" secondAttribute="trailing" constant="45" id="Nmv-lp-K3G"/>
+                            <constraint firstItem="Yau-94-LjT" firstAttribute="leading" secondItem="Yaa-Bf-9aV" secondAttribute="leading" constant="40" id="QAx-i7-yML"/>
+                            <constraint firstItem="f6i-aP-byT" firstAttribute="top" secondItem="bYJ-HL-Fp2" secondAttribute="bottom" constant="10" id="Qf4-iJ-FFK"/>
+                            <constraint firstItem="Yau-94-LjT" firstAttribute="top" secondItem="Yaa-Bf-9aV" secondAttribute="top" constant="150" id="Uqh-7c-FKh"/>
+                            <constraint firstItem="vh0-b9-lOx" firstAttribute="leading" secondItem="Yaa-Bf-9aV" secondAttribute="leading" constant="45" id="foH-DE-edO"/>
+                            <constraint firstItem="f6i-aP-byT" firstAttribute="centerX" secondItem="a2t-v3-pyU" secondAttribute="centerX" id="sCI-Qi-EoU"/>
+                            <constraint firstItem="bYJ-HL-Fp2" firstAttribute="leading" secondItem="Yaa-Bf-9aV" secondAttribute="leading" constant="40" id="sqh-iU-Qjs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="appTitle" destination="Yau-94-LjT" id="dVs-1f-gHJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ra7-Gg-gMy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-492.75362318840581" y="118.52678571428571"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Nano_Challenge_2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController storyboardIdentifier="survey" id="BYZ-38-t0r" customClass="ViewController" customModule="Nano_Challenge_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="survey" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -23,11 +96,11 @@
                                     <constraint firstAttribute="height" constant="56" id="RtY-A5-tpf"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
-                                <color key="tintColor" systemColor="systemGray2Color"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="titleEdgeInsets" minX="46" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="22" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="매우 그렇다">
-                                    <color key="titleColor" systemColor="systemGray2Color"/>
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
                                 </state>
@@ -41,11 +114,11 @@
                                     <constraint firstAttribute="height" constant="56" id="mLO-YE-b6k"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
-                                <color key="tintColor" systemColor="systemGray2Color"/>
+                                <color key="tintColor" systemColor="systemGray4Color"/>
                                 <inset key="titleEdgeInsets" minX="46" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="22" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="그렇다">
-                                    <color key="titleColor" systemColor="systemGray2Color"/>
+                                    <color key="titleColor" systemColor="systemGray4Color"/>
                                     <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
                                 </state>
@@ -59,11 +132,11 @@
                                     <constraint firstAttribute="height" constant="56" id="3ec-eF-EH5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
-                                <color key="tintColor" systemColor="systemGray2Color"/>
+                                <color key="tintColor" systemColor="systemGray4Color"/>
                                 <inset key="titleEdgeInsets" minX="46" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="22" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="보통이다">
-                                    <color key="titleColor" systemColor="systemGray2Color"/>
+                                    <color key="titleColor" systemColor="systemGray4Color"/>
                                     <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
                                 </state>
@@ -77,11 +150,11 @@
                                     <constraint firstAttribute="height" constant="56" id="USQ-r2-k15"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
-                                <color key="tintColor" systemColor="systemGray2Color"/>
+                                <color key="tintColor" systemColor="systemGray4Color"/>
                                 <inset key="titleEdgeInsets" minX="46" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="22" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="아니다">
-                                    <color key="titleColor" systemColor="systemGray2Color"/>
+                                    <color key="titleColor" systemColor="systemGray4Color"/>
                                     <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
                                 </state>
@@ -95,11 +168,11 @@
                                     <constraint firstAttribute="height" constant="56" id="ocy-sA-0yW"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
-                                <color key="tintColor" systemColor="systemGray2Color"/>
+                                <color key="tintColor" systemColor="systemGray4Color"/>
                                 <inset key="titleEdgeInsets" minX="46" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="22" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="매우 아니다">
-                                    <color key="titleColor" systemColor="systemGray2Color"/>
+                                    <color key="titleColor" systemColor="systemGray4Color"/>
                                     <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
                                 </state>
@@ -109,7 +182,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cul-Dj-e1C">
                                 <rect key="frame" x="45" y="722" width="324" height="56"/>
-                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="1G4-fi-FIZ"/>
                                 </constraints>
@@ -128,12 +201,13 @@
                                     <constraint firstAttribute="height" constant="80" id="9FL-Ac-zkg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MiQ-mp-5Qq">
                                 <rect key="frame" x="0.0" y="124" width="414" height="1"/>
-                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="hzN-DH-TbU"/>
                                 </constraints>
@@ -150,7 +224,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="count" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaT-Q0-iVA">
                                 <rect key="frame" x="20" y="91" width="374" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -221,7 +295,7 @@
                                     <constraint firstAttribute="height" constant="40" id="Qs0-BY-ddW"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U3n-hs-Nqs">
@@ -233,8 +307,8 @@
                                             <constraint firstAttribute="width" constant="139" id="8eS-2A-8BR"/>
                                             <constraint firstAttribute="height" constant="50" id="aIA-61-pSX"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJl-j2-dVT">
@@ -244,8 +318,8 @@
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="26" id="7aN-Ow-87p"/>
                                             <constraint firstAttribute="height" constant="26" id="gMo-Bv-Otr"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="good" translatesAutoresizingMaskIntoConstraints="NO" id="hz8-Qt-p9D">
@@ -261,7 +335,7 @@
                                             <constraint firstAttribute="height" constant="20.5" id="zks-SR-rJ8"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -296,8 +370,8 @@
                                             <constraint firstAttribute="width" constant="139" id="Bnh-zP-oVf"/>
                                             <constraint firstAttribute="height" constant="50" id="fqc-9x-thL"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHK-cb-sgL">
@@ -306,14 +380,14 @@
                                             <constraint firstAttribute="width" constant="114" id="SmW-PT-Ajs"/>
                                             <constraint firstAttribute="height" constant="26" id="WYu-cp-X5j"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;전생에 원수사이여도 이거보단 나을듯&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="826-Ed-7Ex">
                                         <rect key="frame" x="20" y="180" width="300" height="18"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -340,7 +414,7 @@
                                     <constraint firstAttribute="height" constant="40" id="aNP-z1-0jj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나와 가장 비슷한 성향의 멘토는?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYM-JT-jgZ">
@@ -349,7 +423,7 @@
                                     <constraint firstAttribute="height" constant="25" id="Gak-KN-IyJ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나와 가장 다른 성향의 멘토는?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80a-6k-lH8">
@@ -359,7 +433,7 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="d9K-VD-Wlk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="너무 진지하게 받아들이지 말아요 우리😀" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5KV-hU-94p">
@@ -369,7 +443,7 @@
                                     <constraint firstAttribute="height" constant="21" id="wJz-nw-Zfd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JsW-GS-BVK">
@@ -427,15 +501,10 @@
     <resources>
         <image name="circle.fill" catalog="system" width="128" height="121"/>
         <image name="good" width="267" height="248"/>
+        <image name="main" width="980" height="866"/>
         <image name="paguk" width="309" height="315"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray4Color">
             <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
