@@ -12,7 +12,7 @@ var totalResult = [Dictionary<String, Double>.Element]()
 
 class ViewController: UIViewController {
     
-    let myModel = aa()
+    let myModel = nano()
     
     let myQusetionList: [String] = [
         "나는 다른사람이 강하게 맞다고 주장하면 납득하는 편이다",
@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         "휴식을 취하기전에 집안일을 먼저 끝내놓는 편이다",
         "나는 영화를 보기전에 영화정보를 알아보는 편이다",
         "카페에 갔는데 메뉴가 잘못나오면 말하기를 망설인다",
-        "재밋는 드라마가 나오면 기다렸다 몰아본다"
+        "재미있는 드라마가 나오면 기다렸다 몰아본다"
     ]
     
     var questionIndex = 0
@@ -120,7 +120,7 @@ extension ViewController {
     }
      
     func presentMyResult() {
-        let surveyInout = aaInput(one: Double(chosedButtonList[0]), two: Double(chosedButtonList[1]), three: Double(chosedButtonList[2]), four: Double(chosedButtonList[3]), five: Double(chosedButtonList[4]), six: Double(chosedButtonList[5]), seven: Double(chosedButtonList[6]))
+        let surveyInout = nanoInput(_1: Double(chosedButtonList[0]), _2: Double(chosedButtonList[1]), _3: Double(chosedButtonList[2]), _4: Double(chosedButtonList[3]), _5: Double(chosedButtonList[4]), _6: Double(chosedButtonList[5]), _7: Double(chosedButtonList[6]), _8: Double(chosedButtonList[7]), _9: Double(chosedButtonList[8]), _10: Double(chosedButtonList[9]))
 
         if let myResult = try? myModel.prediction(input: surveyInout) {
             surveyResult = myResult.result
