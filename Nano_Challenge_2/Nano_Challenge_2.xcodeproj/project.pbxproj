@@ -11,6 +11,8 @@
 		C0355F3728BCE99100213529 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0355F3628BCE99100213529 /* SecondViewController.swift */; };
 		C0355F3928BCF0F900213529 /* aa.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C0355F3828BCF0F900213529 /* aa.mlmodel */; };
 		C0355F3B28BDA34F00213529 /* nano.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C0355F3A28BDA34F00213529 /* nano.mlmodel */; };
+		C0355F3F28BDC52900213529 /* MyFinalModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C0355F3E28BDC52900213529 /* MyFinalModel.mlmodel */; };
+		C0355F4128BDC56E00213529 /* MyRealFinalModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C0355F4028BDC56E00213529 /* MyRealFinalModel.mlmodel */; };
 		C0CD7ADB28BCB2DB00C33801 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CD7ADA28BCB2DB00C33801 /* AppDelegate.swift */; };
 		C0CD7ADD28BCB2DB00C33801 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CD7ADC28BCB2DB00C33801 /* SceneDelegate.swift */; };
 		C0CD7ADF28BCB2DB00C33801 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CD7ADE28BCB2DB00C33801 /* ViewController.swift */; };
@@ -24,6 +26,8 @@
 		C0355F3628BCE99100213529 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		C0355F3828BCF0F900213529 /* aa.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = aa.mlmodel; sourceTree = "<group>"; };
 		C0355F3A28BDA34F00213529 /* nano.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = nano.mlmodel; sourceTree = "<group>"; };
+		C0355F3E28BDC52900213529 /* MyFinalModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MyFinalModel.mlmodel; path = ../../../../MyFinalModel.mlmodel; sourceTree = "<group>"; };
+		C0355F4028BDC56E00213529 /* MyRealFinalModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MyRealFinalModel.mlmodel; sourceTree = "<group>"; };
 		C0CD7AD728BCB2DB00C33801 /* Nano_Challenge_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nano_Challenge_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0CD7ADA28BCB2DB00C33801 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0CD7ADC28BCB2DB00C33801 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 				C0355F3428BCE72500213529 /* MyModel.mlmodel */,
 				C0355F3828BCF0F900213529 /* aa.mlmodel */,
 				C0355F3A28BDA34F00213529 /* nano.mlmodel */,
+				C0355F3E28BDC52900213529 /* MyFinalModel.mlmodel */,
+				C0355F4028BDC56E00213529 /* MyRealFinalModel.mlmodel */,
 			);
 			path = Nano_Challenge_2;
 			sourceTree = "<group>";
@@ -151,11 +157,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0355F3B28BDA34F00213529 /* nano.mlmodel in Sources */,
+				C0355F4128BDC56E00213529 /* MyRealFinalModel.mlmodel in Sources */,
 				C0355F3928BCF0F900213529 /* aa.mlmodel in Sources */,
 				C0CD7ADF28BCB2DB00C33801 /* ViewController.swift in Sources */,
 				C0CD7ADB28BCB2DB00C33801 /* AppDelegate.swift in Sources */,
 				C0355F3528BCE72500213529 /* MyModel.mlmodel in Sources */,
 				C0355F3728BCE99100213529 /* SecondViewController.swift in Sources */,
+				C0355F3F28BDC52900213529 /* MyFinalModel.mlmodel in Sources */,
 				C0CD7ADD28BCB2DB00C33801 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

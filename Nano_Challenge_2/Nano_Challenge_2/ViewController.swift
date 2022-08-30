@@ -12,7 +12,7 @@ var totalResult = [Dictionary<String, Double>.Element]()
 
 class ViewController: UIViewController {
     
-    let myModel = nano()
+    let myModel = MyRealFinalModel()
     
     let myQusetionList: [String] = [
         "나는 다른사람이 강하게 맞다고 주장하면 납득하는 편이다",
@@ -120,7 +120,8 @@ extension ViewController {
     }
      
     func presentMyResult() {
-        let surveyInout = nanoInput(_1: Double(chosedButtonList[0]), _2: Double(chosedButtonList[1]), _3: Double(chosedButtonList[2]), _4: Double(chosedButtonList[3]), _5: Double(chosedButtonList[4]), _6: Double(chosedButtonList[5]), _7: Double(chosedButtonList[6]), _8: Double(chosedButtonList[7]), _9: Double(chosedButtonList[8]), _10: Double(chosedButtonList[9]))
+        let surveyInout = MyRealFinalModelInput(_1: Double(chosedButtonList[0]), _2: Double(chosedButtonList[1]), _3: Double(chosedButtonList[2]), _4: Double(chosedButtonList[3]), _5: Double(chosedButtonList[4]), _6: Double(chosedButtonList[5]), _7: Double(chosedButtonList[6]), _8: Double(chosedButtonList[7]), _9: Double(chosedButtonList[8]), _10: Double(chosedButtonList[9]))
+        
 
         if let myResult = try? myModel.prediction(input: surveyInout) {
             surveyResult = myResult.result
