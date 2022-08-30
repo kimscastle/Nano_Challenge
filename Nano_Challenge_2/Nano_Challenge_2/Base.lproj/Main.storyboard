@@ -311,7 +311,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;전생에 원수사이여도 이거보단 나을듯&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="826-Ed-7Ex">
-                                        <rect key="frame" x="50" y="180" width="240" height="18"/>
+                                        <rect key="frame" x="20" y="180" width="300" height="18"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -323,13 +323,13 @@
                                     <constraint firstItem="FHK-cb-sgL" firstAttribute="top" secondItem="0WO-Ah-cMp" secondAttribute="bottom" id="8A4-CG-5Ns"/>
                                     <constraint firstAttribute="height" constant="230" id="A9L-RW-UQ2"/>
                                     <constraint firstAttribute="width" constant="340" id="Mix-w2-4GV"/>
-                                    <constraint firstItem="826-Ed-7Ex" firstAttribute="leading" secondItem="ZTd-vS-4Se" secondAttribute="leading" constant="50" id="NPV-8D-Sqn"/>
+                                    <constraint firstItem="826-Ed-7Ex" firstAttribute="leading" secondItem="ZTd-vS-4Se" secondAttribute="leading" constant="20" id="NPV-8D-Sqn"/>
                                     <constraint firstItem="sCS-F1-Bw5" firstAttribute="top" secondItem="ZTd-vS-4Se" secondAttribute="top" constant="30" id="Osw-YE-qlq"/>
                                     <constraint firstItem="FHK-cb-sgL" firstAttribute="top" secondItem="0WO-Ah-cMp" secondAttribute="bottom" id="Tae-Lg-yab"/>
                                     <constraint firstItem="826-Ed-7Ex" firstAttribute="top" secondItem="sCS-F1-Bw5" secondAttribute="bottom" constant="30" id="UVH-TZ-bpn"/>
                                     <constraint firstItem="0WO-Ah-cMp" firstAttribute="leading" secondItem="sCS-F1-Bw5" secondAttribute="trailing" constant="20" id="Xdi-lE-dw9"/>
                                     <constraint firstItem="FHK-cb-sgL" firstAttribute="leading" secondItem="sCS-F1-Bw5" secondAttribute="trailing" constant="20" id="cug-da-Ems"/>
-                                    <constraint firstAttribute="trailing" secondItem="826-Ed-7Ex" secondAttribute="trailing" constant="50" id="e9e-Fl-X7G"/>
+                                    <constraint firstAttribute="trailing" secondItem="826-Ed-7Ex" secondAttribute="trailing" constant="20" id="e9e-Fl-X7G"/>
                                     <constraint firstItem="sCS-F1-Bw5" firstAttribute="top" secondItem="FHK-cb-sgL" secondAttribute="bottom" constant="-96" id="k7V-KO-gA3"/>
                                     <constraint firstItem="0WO-Ah-cMp" firstAttribute="top" secondItem="ZTd-vS-4Se" secondAttribute="top" constant="50" id="nFf-M6-2jD"/>
                                 </constraints>
