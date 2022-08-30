@@ -117,10 +117,13 @@
                                     <action selector="responseButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n27-q0-QhI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cul-Dj-e1C">
-                                <rect key="frame" x="174" y="662" width="67" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cul-Dj-e1C">
+                                <rect key="frame" x="100" y="674" width="214" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="jpa-LI-3Z8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="다음 질문">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -142,6 +145,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Cul-Dj-e1C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="3dq-FX-923"/>
                             <constraint firstItem="gd9-my-HMg" firstAttribute="top" secondItem="PTB-2G-DZH" secondAttribute="bottom" constant="20" id="48i-Pv-lFO"/>
                             <constraint firstItem="g86-Di-MWY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6kI-qj-ePl"/>
                             <constraint firstItem="PTB-2G-DZH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="84A-K7-MV8"/>
@@ -152,6 +156,7 @@
                             <constraint firstItem="PTB-2G-DZH" firstAttribute="top" secondItem="g86-Di-MWY" secondAttribute="bottom" constant="20" id="J6P-7C-gJe"/>
                             <constraint firstItem="cW8-gQ-DyW" firstAttribute="top" secondItem="gd9-my-HMg" secondAttribute="bottom" constant="20" id="LT7-8p-kiE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PTB-2G-DZH" secondAttribute="trailing" constant="30" id="MJH-Ho-bXX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cul-Dj-e1C" secondAttribute="trailing" constant="100" id="NVE-kw-pS2"/>
                             <constraint firstItem="nm9-KB-Aue" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="PEX-cx-bRl"/>
                             <constraint firstItem="g86-Di-MWY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="TGk-91-Jjt"/>
                             <constraint firstItem="nm9-KB-Aue" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WAJ-oi-RTR"/>
@@ -159,6 +164,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g86-Di-MWY" secondAttribute="trailing" constant="30" id="ZSd-vh-VKV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MWI-Tz-MV6" secondAttribute="trailing" constant="30" id="eVX-HG-cjg"/>
                             <constraint firstItem="g86-Di-MWY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="iXJ-OL-xua"/>
+                            <constraint firstItem="Cul-Dj-e1C" firstAttribute="top" secondItem="MWI-Tz-MV6" secondAttribute="bottom" constant="100" id="nhH-PD-ZX1"/>
                             <constraint firstItem="nm9-KB-Aue" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="oMz-wZ-LXg"/>
                             <constraint firstItem="cW8-gQ-DyW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="pQd-By-500"/>
                             <constraint firstItem="MWI-Tz-MV6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="ufu-Nf-cPC"/>

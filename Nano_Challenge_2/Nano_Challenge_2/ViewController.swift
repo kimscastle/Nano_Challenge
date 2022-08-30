@@ -19,9 +19,12 @@ class ViewController: UIViewController {
         "나는 주말엔 집에서 있는걸 선호하는 편이다",
         "모르는게있으면 다른사람에게 물어보는 편이다",
         "어색한 침묵이 흐를때 나는 먼저 말을 꺼내는 편이다",
-        "하나를 끝낸후에야 비로소 다른걸 할수 있는 편이다",
+        "하나를 끝낸후에야 다른걸 할수 있는 편이다",
         "오래전의 실수를 후회할때가 많다",
-        "휴식을 취하기전에 집안일을 먼저 끝내놓는 편이다"
+        "휴식을 취하기전에 집안일을 먼저 끝내놓는 편이다",
+        "나는 영화를 보기전에 영화정보를 알아보는 편이다",
+        "카페에 갔는데 메뉴가 잘못나오면 말하기를 망설인다",
+        "재밋는 드라마가 나오면 기다렸다 몰아본다"
     ]
     
     var questionIndex = 0
@@ -43,11 +46,15 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        questionLabel.text = myQusetionList[0]
+        
         surveyResponseButtons.forEach { button in
             view.addSubview(button)
             makeNonActiveButton(button)
         }
-        questionLabel.text = myQusetionList[0]
+        
+        view.addSubview(nextButton)
+        nextButton.makeRoundButton()
     }
     
     @IBAction func responseButtons(_ sender: UIButton) {
@@ -58,7 +65,6 @@ class ViewController: UIViewController {
                 makeNonActiveButton(button)
             }
         }
-        
     }
     
     @IBAction func nextButtonPressed(_ sender: UIButton) {
@@ -72,7 +78,6 @@ class ViewController: UIViewController {
 
         if questionIndex == lastIndex {
             presentMyResult()
-            //모달창띄우기
             guard let uvc = self.storyboard?.instantiateViewController(withIdentifier: "second") else { return }
             uvc.modalTransitionStyle = UIModalTransitionStyle.coverVertical
             self.present(uvc, animated: true)
@@ -126,3 +131,8 @@ extension ViewController {
     }
 }
 
+extension UIButton {
+    func makeRoundButton() {
+        self.layer.cornerRadius = 25
+    }
+}
