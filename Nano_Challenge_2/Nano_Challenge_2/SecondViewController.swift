@@ -11,21 +11,52 @@ class SecondViewController: UIViewController {
 
     @IBOutlet weak var myResultLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var subTitleLabel: UILabel!
     @IBOutlet weak var similarityLabel: UILabel!
+    @IBOutlet weak var mainBacgroundView: UIView!
+    @IBOutlet weak var goodMent: UILabel!
     
     @IBOutlet weak var pagukNameLabel: UILabel!
     @IBOutlet weak var pagukSimilarityLabel: UILabel!
+    @IBOutlet weak var pagukBackgroundView: UIView!
+    @IBOutlet weak var badMent: UILabel!
     
+    @IBOutlet weak var downRec: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(totalResult)
+        downRec.layer.cornerRadius = 3
+        mainBacgroundView.layer.cornerRadius = 20
+        pagukBackgroundView.layer.cornerRadius = 20
         myResultLabel.text = surveyResult
-        subTitleLabel.text = "\(surveyResult)과(와) 나의 유사도"
         similarityLabel.text = makePercentage(totalResult[0].value) + "%"
         pagukNameLabel.text = totalResult[totalResult.count - 1].key
         pagukSimilarityLabel.text = makePercentage(totalResult[totalResult.count - 1].value) + "%"
+        switch totalResult[0].value {
+        case 0..<30 :
+            goodMent.text = "많이는 아니지만 제법(?) 비슷해요"
+        case 30..<50 :
+            goodMent.text = "내안에 너...있다!"
+        case 50..<60 :
+            goodMent.text = "우리 제법 잘 맞아요;;"
+        case 60..<100 :
+            goodMent.text = "우리 혹시...천생연분?"
+        default:
+            "우리 맞기는 한걸까...?"
+        }
+        
+        switch totalResult[totalResult.count - 1].value {
+        case 0..<5 :
+            badMent.text = "전생에 원수 사이였어도 이거보단 나을듯;;"
+        case 5..<10 :
+            badMent.text = "워어~ 머리부터 발끝까지 ~ 다안맞음."
+        case 10..<20 :
+            badMent.text = "어쩌면 비슷한 부분은 있을지도...?"
+        case 20..<30 :
+            badMent.text = "이정도면 파국은 아닐지도...?"
+        default:
+            "이정도면 안 맞는건 아닌데...?"
+        }
+
     }
     
 

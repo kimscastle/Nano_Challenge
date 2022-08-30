@@ -37,6 +37,7 @@ class ViewController: UIViewController {
         myQusetionList.count - 1
     }
 
+    @IBOutlet weak var questionCount: UILabel!
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet var surveyResponseButtons: [UIButton]!
     @IBOutlet weak var nextButton: UIButton!
@@ -46,6 +47,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        questionCount.text = "Question 1 / \(myQusetionList.count)"
         questionLabel.text = myQusetionList[0]
         
         surveyResponseButtons.forEach { button in
@@ -58,7 +60,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func responseButtons(_ sender: UIButton) {
+        //버튼을 누르면 누른버튼을 인식하고 다음질문버튼이 활성화됨
         chosedButton = sender.tag
+        nextButton.backgroundColor = (chosedButton == nil) ? .systemGray2 : .systemBlue
+        
+        //버튼을 누르면 누른것만 acive상태로 만들고 나머지는 다 non-acive상태로 바꿈
         makeActiveButton(sender)
         surveyResponseButtons.forEach { button in
             if sender != button {
@@ -68,22 +74,32 @@ class ViewController: UIViewController {
     }
     
     @IBAction func nextButtonPressed(_ sender: UIButton) {
+        //아무것도 안누르면 다음버튼이 동작하지 않음
         guard let chosedButton = chosedButton else { return print("버튼을 눌러주세요") }
+        
+        //다음버튼을 누르면 현재 누른 설문조사 결과가 저장되고 다음질문을 non-acitve상태로 바꿔줌
         chosedButtonList.append(chosedButton)
-        print(chosedButtonList)
-        surveyResponseButtons.forEach { makeNonActiveButton($0) }
         self.chosedButton = nil
+        sender.backgroundColor = .systemGray2
+        
+        //다음 질문으로 넘어가면 모든 버튼이 비활성화 되어야함
+        surveyResponseButtons.forEach { makeNonActiveButton($0) }
 
+        
+        //마지막질문에는 다음버튼의 title이 변함
         nextButton.setTitle( questionIndex == beforeLastIndex ? "제출후 확인" : "다음질문", for: .normal)
-
+        
+        //마지막질문이 끝나면 결과화면이 나옴
         if questionIndex == lastIndex {
             presentMyResult()
             guard let uvc = self.storyboard?.instantiateViewController(withIdentifier: "second") else { return }
             uvc.modalTransitionStyle = UIModalTransitionStyle.coverVertical
             self.present(uvc, animated: true)
             makeInit()
+            questionCount.text = "Qusetion 1 / \(myQusetionList.count)"
         } else {
             questionIndex += 1
+            questionCount.text = "Qusetion \(questionIndex + 1) / \(myQusetionList.count)"
         }
         questionLabel.text = myQusetionList[questionIndex]
         
@@ -97,8 +113,8 @@ extension ViewController {
     func makeNonActiveButton(_ button: UIButton) {
         let config = UIImage.SymbolConfiguration(pointSize: 25, weight: .medium, scale: .default)
         let nonActImage = UIImage(systemName: "circle.fill", withConfiguration: config)
-        button.layer.cornerRadius = 25
-        button.layer.borderWidth = 3
+        button.layer.cornerRadius = 28
+        button.layer.borderWidth = 2
         button.layer.borderColor = UIColor.systemGray2.cgColor
         button.setImage(nonActImage, for: .normal)
         button.tintColor = UIColor.systemGray2
@@ -126,14 +142,14 @@ extension ViewController {
         if let myResult = try? myModel.prediction(input: surveyInout) {
             surveyResult = myResult.result
             totalResult = myResult.resultProbability.sorted(by: {$0.value > $1.value})
-            print(myResult.result)
-            print(myResult.resultProbability)
+            print(surveyResult)
+            print(totalResult)
         }
     }
 }
 
 extension UIButton {
     func makeRoundButton() {
-        self.layer.cornerRadius = 25
+        self.layer.cornerRadius = 28
     }
 }
