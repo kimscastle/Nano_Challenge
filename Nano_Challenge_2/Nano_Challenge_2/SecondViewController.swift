@@ -54,11 +54,11 @@ class SecondViewController: UIViewController {
         switch (totalResult[totalResult.count - 1].value) * 100 {
         case 0..<3 :
             badMent.text = "전생에 원수 사이였어도 이거보단 나을듯;;"
-        case 3..<10 :
+        case 3..<7 :
             badMent.text = "워어~ 머리부터 발끝까지 ~ 다안맞음."
-        case 10..<20 :
+        case 7..<12 :
             badMent.text = "어쩌면 비슷한 부분은 있을지도...?"
-        case 20..<30 :
+        case 12..<30 :
             badMent.text = "이정도면 파국은 아닐지도...?"
         default:
             badMent.text = "이정도면 안 맞는건 아닌데...?"

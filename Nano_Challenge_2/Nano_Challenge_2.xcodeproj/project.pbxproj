@@ -12,7 +12,6 @@
 		C0355F3728BCE99100213529 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0355F3628BCE99100213529 /* SecondViewController.swift */; };
 		C0355F3928BCF0F900213529 /* aa.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C0355F3828BCF0F900213529 /* aa.mlmodel */; };
 		C0355F3B28BDA34F00213529 /* nano.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C0355F3A28BDA34F00213529 /* nano.mlmodel */; };
-		C0355F3F28BDC52900213529 /* MyFinalModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C0355F3E28BDC52900213529 /* MyFinalModel.mlmodel */; };
 		C0355F4128BDC56E00213529 /* MyRealFinalModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C0355F4028BDC56E00213529 /* MyRealFinalModel.mlmodel */; };
 		C0CD7ADB28BCB2DB00C33801 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CD7ADA28BCB2DB00C33801 /* AppDelegate.swift */; };
 		C0CD7ADD28BCB2DB00C33801 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CD7ADC28BCB2DB00C33801 /* SceneDelegate.swift */; };
@@ -34,7 +33,6 @@
 		C0355F3628BCE99100213529 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		C0355F3828BCF0F900213529 /* aa.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = aa.mlmodel; sourceTree = "<group>"; };
 		C0355F3A28BDA34F00213529 /* nano.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = nano.mlmodel; sourceTree = "<group>"; };
-		C0355F3E28BDC52900213529 /* MyFinalModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MyFinalModel.mlmodel; path = ../../../../MyFinalModel.mlmodel; sourceTree = "<group>"; };
 		C0355F4028BDC56E00213529 /* MyRealFinalModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MyRealFinalModel.mlmodel; sourceTree = "<group>"; };
 		C0CD7AD728BCB2DB00C33801 /* Nano_Challenge_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nano_Challenge_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0CD7ADA28BCB2DB00C33801 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,7 +92,6 @@
 				C0355F3828BCF0F900213529 /* aa.mlmodel */,
 				C0D1593928BF2DF500674D9D /* z.mlmodel */,
 				C0355F3A28BDA34F00213529 /* nano.mlmodel */,
-				C0355F3E28BDC52900213529 /* MyFinalModel.mlmodel */,
 				C0355F4028BDC56E00213529 /* MyRealFinalModel.mlmodel */,
 				C003B2B128BE13440080008F /* LaunchViewController.swift */,
 				C0D1593128BF1B7D00674D9D /* gungsuh.ttc */,
@@ -190,7 +187,6 @@
 				C0355F3528BCE72500213529 /* MyModel.mlmodel in Sources */,
 				C0D1593428BF290700674D9D /* realFinalModel.mlmodel in Sources */,
 				C0355F3728BCE99100213529 /* SecondViewController.swift in Sources */,
-				C0355F3F28BDC52900213529 /* MyFinalModel.mlmodel in Sources */,
 				C0D1593828BF2B8C00674D9D /* x.mlmodel in Sources */,
 				C0CD7ADD28BCB2DB00C33801 /* SceneDelegate.swift in Sources */,
 			);
