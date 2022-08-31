@@ -57,7 +57,7 @@ class SecondViewController: UIViewController {
         case 3..<7 :
             badMent.text = "워어~ 머리부터 발끝까지 ~ 다안맞음."
         case 7..<12 :
-            badMent.text = "어쩌면 비슷한 부분은 있을지도...?"
+            badMent.text = "보아라. 결국 파국이다."
         case 12..<30 :
             badMent.text = "이정도면 파국은 아닐지도...?"
         default:
