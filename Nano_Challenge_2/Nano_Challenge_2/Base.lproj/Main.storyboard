@@ -57,10 +57,17 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="ACR-Ls-I91">
                                 <rect key="frame" x="40" y="191" width="334" height="60"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="파국조합🥒도 나옴ㅋ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bit-hx-DFJ">
+                                <rect key="frame" x="100" y="783" width="214" height="14"/>
+                                <fontDescription key="fontDescription" name="GungsuhChe" family="GungsuhChe" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Yaa-Bf-9aV"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Yaa-Bf-9aV" firstAttribute="trailing" secondItem="bit-hx-DFJ" secondAttribute="trailing" constant="100" id="3Cl-Cu-JVF"/>
                             <constraint firstItem="Yaa-Bf-9aV" firstAttribute="trailing" secondItem="bYJ-HL-Fp2" secondAttribute="trailing" constant="40" id="Ccv-ry-ph7"/>
                             <constraint firstItem="Yaa-Bf-9aV" firstAttribute="bottom" secondItem="vh0-b9-lOx" secondAttribute="bottom" constant="84" id="Eno-9k-aHl"/>
                             <constraint firstItem="Yaa-Bf-9aV" firstAttribute="trailing" secondItem="vh0-b9-lOx" secondAttribute="trailing" constant="45" id="Nmv-lp-K3G"/>
@@ -68,9 +75,11 @@
                             <constraint firstItem="ACR-Ls-I91" firstAttribute="top" secondItem="Yaa-Bf-9aV" secondAttribute="top" constant="147" id="R5o-qW-Pc4"/>
                             <constraint firstItem="bYJ-HL-Fp2" firstAttribute="top" secondItem="ACR-Ls-I91" secondAttribute="bottom" constant="8" id="dff-6n-wHa"/>
                             <constraint firstItem="vh0-b9-lOx" firstAttribute="leading" secondItem="Yaa-Bf-9aV" secondAttribute="leading" constant="45" id="foH-DE-edO"/>
+                            <constraint firstItem="bit-hx-DFJ" firstAttribute="top" secondItem="vh0-b9-lOx" secondAttribute="bottom" constant="5" id="gD7-EZ-u1n"/>
                             <constraint firstItem="bYJ-HL-Fp2" firstAttribute="leading" secondItem="ACR-Ls-I91" secondAttribute="leading" id="gjo-dV-NrZ"/>
                             <constraint firstItem="f6i-aP-byT" firstAttribute="centerX" secondItem="a2t-v3-pyU" secondAttribute="centerX" id="sCI-Qi-EoU"/>
                             <constraint firstItem="bYJ-HL-Fp2" firstAttribute="leading" secondItem="Yaa-Bf-9aV" secondAttribute="leading" constant="40" id="sqh-iU-Qjs"/>
+                            <constraint firstItem="bit-hx-DFJ" firstAttribute="leading" secondItem="Yaa-Bf-9aV" secondAttribute="leading" constant="100" id="szo-RB-tTL"/>
                             <constraint firstItem="bYJ-HL-Fp2" firstAttribute="trailing" secondItem="ACR-Ls-I91" secondAttribute="trailing" id="vrj-er-KEu"/>
                             <constraint firstItem="bYJ-HL-Fp2" firstAttribute="top" secondItem="a2t-v3-pyU" secondAttribute="top" constant="259" id="wna-XN-dw7"/>
                         </constraints>
@@ -297,7 +306,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U3n-hs-Nqs">
-                                <rect key="frame" x="37" y="170" width="340" height="210"/>
+                                <rect key="frame" x="47" y="170" width="320" height="210"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqt-CH-8ia">
                                         <rect key="frame" x="190" y="40" width="139" height="50"/>
@@ -305,7 +314,7 @@
                                             <constraint firstAttribute="width" constant="139" id="8eS-2A-8BR"/>
                                             <constraint firstAttribute="height" constant="50" id="aIA-61-pSX"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="GungsuhChe" family="GungsuhChe" pointSize="37"/>
+                                        <fontDescription key="fontDescription" name="GungsuhChe" family="GungsuhChe" pointSize="32"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -328,7 +337,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;이게 좋긴 한건가...?&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IgZ-pd-ZbH">
-                                        <rect key="frame" x="50" y="170" width="240" height="15"/>
+                                        <rect key="frame" x="50" y="170" width="220" height="15"/>
                                         <fontDescription key="fontDescription" name="GungsuhChe" family="GungsuhChe" pointSize="15"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -337,7 +346,7 @@
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>
                                     <constraint firstItem="HJl-j2-dVT" firstAttribute="top" secondItem="fqt-CH-8ia" secondAttribute="bottom" id="2nn-Fp-E1K"/>
-                                    <constraint firstAttribute="width" constant="340" id="AJO-Bq-fen"/>
+                                    <constraint firstAttribute="width" constant="320" id="AJO-Bq-fen"/>
                                     <constraint firstAttribute="trailing" secondItem="IgZ-pd-ZbH" secondAttribute="trailing" constant="50" id="BgA-7s-IBl"/>
                                     <constraint firstItem="fqt-CH-8ia" firstAttribute="top" secondItem="U3n-hs-Nqs" secondAttribute="top" constant="40" id="K9x-OM-IoW"/>
                                     <constraint firstItem="IgZ-pd-ZbH" firstAttribute="leading" secondItem="U3n-hs-Nqs" secondAttribute="leading" constant="50" id="T9O-Oo-JfP"/>
@@ -350,7 +359,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZTd-vS-4Se">
-                                <rect key="frame" x="37" y="490" width="340" height="210"/>
+                                <rect key="frame" x="47" y="490" width="320" height="210"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paguk" translatesAutoresizingMaskIntoConstraints="NO" id="sCS-F1-Bw5">
                                         <rect key="frame" x="50" y="20" width="120" height="120"/>
@@ -365,7 +374,7 @@
                                             <constraint firstAttribute="width" constant="139" id="Bnh-zP-oVf"/>
                                             <constraint firstAttribute="height" constant="50" id="fqc-9x-thL"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="GungsuhChe" family="GungsuhChe" pointSize="37"/>
+                                        <fontDescription key="fontDescription" name="GungsuhChe" family="GungsuhChe" pointSize="32"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -380,7 +389,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;전생에 원수사이여도 이거보단 나을듯&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="826-Ed-7Ex">
-                                        <rect key="frame" x="20" y="170" width="300" height="15"/>
+                                        <rect key="frame" x="20" y="170" width="280" height="15"/>
                                         <fontDescription key="fontDescription" name="GungsuhChe" family="GungsuhChe" pointSize="15"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -391,7 +400,7 @@
                                     <constraint firstItem="sCS-F1-Bw5" firstAttribute="leading" secondItem="ZTd-vS-4Se" secondAttribute="leading" constant="50" id="06J-FM-f8J"/>
                                     <constraint firstItem="FHK-cb-sgL" firstAttribute="top" secondItem="0WO-Ah-cMp" secondAttribute="bottom" id="8A4-CG-5Ns"/>
                                     <constraint firstAttribute="height" constant="210" id="A9L-RW-UQ2"/>
-                                    <constraint firstAttribute="width" constant="340" id="Mix-w2-4GV"/>
+                                    <constraint firstAttribute="width" constant="320" id="Mix-w2-4GV"/>
                                     <constraint firstItem="826-Ed-7Ex" firstAttribute="leading" secondItem="ZTd-vS-4Se" secondAttribute="leading" constant="20" id="NPV-8D-Sqn"/>
                                     <constraint firstItem="sCS-F1-Bw5" firstAttribute="top" secondItem="ZTd-vS-4Se" secondAttribute="top" constant="20" id="Osw-YE-qlq"/>
                                     <constraint firstItem="FHK-cb-sgL" firstAttribute="top" secondItem="0WO-Ah-cMp" secondAttribute="bottom" id="Tae-Lg-yab"/>
@@ -432,12 +441,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="너무 진지하게 받아들이지 말아요 우리😀" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5KV-hU-94p">
-                                <rect key="frame" x="51" y="736" width="312" height="21"/>
+                                <rect key="frame" x="51" y="750" width="312" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="312" id="ioC-r2-bwZ"/>
                                     <constraint firstAttribute="height" constant="21" id="wJz-nw-Zfd"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="12"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -462,7 +471,7 @@
                             <constraint firstItem="hHu-K7-Rb3" firstAttribute="trailing" secondItem="vHm-IO-Vd1" secondAttribute="trailing" constant="50" id="Mpj-hV-km4"/>
                             <constraint firstItem="ZTd-vS-4Se" firstAttribute="top" secondItem="U3n-hs-Nqs" secondAttribute="bottom" constant="110" id="NuX-lw-g69"/>
                             <constraint firstItem="U3n-hs-Nqs" firstAttribute="top" secondItem="3CO-rC-Ztd" secondAttribute="bottom" constant="36" id="QvT-IS-cQa"/>
-                            <constraint firstItem="5KV-hU-94p" firstAttribute="top" secondItem="ZTd-vS-4Se" secondAttribute="bottom" constant="36" id="WQt-cO-IJS"/>
+                            <constraint firstItem="5KV-hU-94p" firstAttribute="top" secondItem="ZTd-vS-4Se" secondAttribute="bottom" constant="50" id="WQt-cO-IJS"/>
                             <constraint firstItem="TYM-JT-jgZ" firstAttribute="top" secondItem="3CO-rC-Ztd" secondAttribute="bottom" constant="4" id="cGh-YT-7E1"/>
                             <constraint firstItem="5KV-hU-94p" firstAttribute="centerX" secondItem="gMF-OC-R5X" secondAttribute="centerX" id="gLe-Of-bdn"/>
                             <constraint firstItem="ZTd-vS-4Se" firstAttribute="centerX" secondItem="gMF-OC-R5X" secondAttribute="centerX" id="iXQ-c6-PCt"/>
