@@ -9,10 +9,8 @@ import UIKit
 
 class LaunchViewController: UIViewController {
 
-    @IBOutlet weak var appTitle: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(appTitle)
 
         // Do any additional setup after loading the view.
     }

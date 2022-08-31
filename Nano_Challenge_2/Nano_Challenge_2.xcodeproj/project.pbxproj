@@ -20,6 +20,12 @@
 		C0CD7AE228BCB2DB00C33801 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0CD7AE028BCB2DB00C33801 /* Main.storyboard */; };
 		C0CD7AE428BCB2DB00C33801 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0CD7AE328BCB2DB00C33801 /* Assets.xcassets */; };
 		C0CD7AE728BCB2DB00C33801 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0CD7AE528BCB2DB00C33801 /* LaunchScreen.storyboard */; };
+		C0D1593228BF1B7D00674D9D /* gungsuh.ttc in Resources */ = {isa = PBXBuildFile; fileRef = C0D1593128BF1B7D00674D9D /* gungsuh.ttc */; };
+		C0D1593428BF290700674D9D /* realFinalModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C0D1593328BF290700674D9D /* realFinalModel.mlmodel */; };
+		C0D1593628BF2AC400674D9D /* test123.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C0D1593528BF2AC400674D9D /* test123.mlmodel */; };
+		C0D1593828BF2B8C00674D9D /* x.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C0D1593728BF2B8C00674D9D /* x.mlmodel */; };
+		C0D1593A28BF2DF500674D9D /* z.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C0D1593928BF2DF500674D9D /* z.mlmodel */; };
+		C0D1593C28BF302E00674D9D /* hard.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C0D1593B28BF302E00674D9D /* hard.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +44,12 @@
 		C0CD7AE328BCB2DB00C33801 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0CD7AE628BCB2DB00C33801 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0CD7AE828BCB2DB00C33801 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0D1593128BF1B7D00674D9D /* gungsuh.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = gungsuh.ttc; sourceTree = "<group>"; };
+		C0D1593328BF290700674D9D /* realFinalModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = realFinalModel.mlmodel; sourceTree = "<group>"; };
+		C0D1593528BF2AC400674D9D /* test123.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = test123.mlmodel; sourceTree = "<group>"; };
+		C0D1593728BF2B8C00674D9D /* x.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = x.mlmodel; sourceTree = "<group>"; };
+		C0D1593928BF2DF500674D9D /* z.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = z.mlmodel; sourceTree = "<group>"; };
+		C0D1593B28BF302E00674D9D /* hard.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = hard.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,10 +92,16 @@
 				C0CD7AE828BCB2DB00C33801 /* Info.plist */,
 				C0355F3428BCE72500213529 /* MyModel.mlmodel */,
 				C0355F3828BCF0F900213529 /* aa.mlmodel */,
+				C0D1593928BF2DF500674D9D /* z.mlmodel */,
 				C0355F3A28BDA34F00213529 /* nano.mlmodel */,
 				C0355F3E28BDC52900213529 /* MyFinalModel.mlmodel */,
 				C0355F4028BDC56E00213529 /* MyRealFinalModel.mlmodel */,
 				C003B2B128BE13440080008F /* LaunchViewController.swift */,
+				C0D1593128BF1B7D00674D9D /* gungsuh.ttc */,
+				C0D1593328BF290700674D9D /* realFinalModel.mlmodel */,
+				C0D1593528BF2AC400674D9D /* test123.mlmodel */,
+				C0D1593728BF2B8C00674D9D /* x.mlmodel */,
+				C0D1593B28BF302E00674D9D /* hard.mlmodel */,
 			);
 			path = Nano_Challenge_2;
 			sourceTree = "<group>";
@@ -147,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0CD7AE728BCB2DB00C33801 /* LaunchScreen.storyboard in Resources */,
+				C0D1593228BF1B7D00674D9D /* gungsuh.ttc in Resources */,
 				C0CD7AE428BCB2DB00C33801 /* Assets.xcassets in Resources */,
 				C0CD7AE228BCB2DB00C33801 /* Main.storyboard in Resources */,
 			);
@@ -160,14 +179,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0355F3B28BDA34F00213529 /* nano.mlmodel in Sources */,
+				C0D1593A28BF2DF500674D9D /* z.mlmodel in Sources */,
 				C003B2B228BE13440080008F /* LaunchViewController.swift in Sources */,
 				C0355F4128BDC56E00213529 /* MyRealFinalModel.mlmodel in Sources */,
 				C0355F3928BCF0F900213529 /* aa.mlmodel in Sources */,
+				C0D1593C28BF302E00674D9D /* hard.mlmodel in Sources */,
 				C0CD7ADF28BCB2DB00C33801 /* ViewController.swift in Sources */,
+				C0D1593628BF2AC400674D9D /* test123.mlmodel in Sources */,
 				C0CD7ADB28BCB2DB00C33801 /* AppDelegate.swift in Sources */,
 				C0355F3528BCE72500213529 /* MyModel.mlmodel in Sources */,
+				C0D1593428BF290700674D9D /* realFinalModel.mlmodel in Sources */,
 				C0355F3728BCE99100213529 /* SecondViewController.swift in Sources */,
 				C0355F3F28BDC52900213529 /* MyFinalModel.mlmodel in Sources */,
+				C0D1593828BF2B8C00674D9D /* x.mlmodel in Sources */,
 				C0CD7ADD28BCB2DB00C33801 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
