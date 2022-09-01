@@ -9,33 +9,69 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
-    @IBOutlet weak var myResultLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var similarityLabel: UILabel!
-    @IBOutlet weak var mainBacgroundView: UIView!
     @IBOutlet weak var goodMent: UILabel!
+    @IBOutlet weak var goodImage: UIImageView!
     
-    @IBOutlet weak var pagukNameLabel: UILabel!
     @IBOutlet weak var pagukSimilarityLabel: UILabel!
-    @IBOutlet weak var pagukBackgroundView: UIView!
     @IBOutlet weak var badMent: UILabel!
     
+    @IBOutlet weak var badImage: UIImageView!
     @IBOutlet weak var downRec: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         downRec.layer.cornerRadius = 3
-        mainBacgroundView.backgroundColor = #colorLiteral(red: 0.8470588326, green: 0.8470588326, blue: 0.8470588326, alpha: 1)
-        pagukBackgroundView.backgroundColor = #colorLiteral(red: 0.8470588326, green: 0.8470588326, blue: 0.8470588326, alpha: 1)
-        mainBacgroundView.layer.cornerRadius = 20
-        pagukBackgroundView.layer.cornerRadius = 20
-        myResultLabel.text = surveyResult
-        myResultLabel.addTextOutline(usingColor: .systemBlue, outlineWidth: 3)
         similarityLabel.text = makePercentage(totalResult[0].value) + "%"
-        pagukNameLabel.text = totalResult[totalResult.count - 1].key
-        pagukNameLabel.addTextOutline(usingColor: .red, outlineWidth: 3)
         pagukSimilarityLabel.text = makePercentage(totalResult[totalResult.count - 1].value) + "%"
+        
+        switch totalResult[0].key {
+        case "아-이작" :
+            goodImage.image = UIImage(named: "g이작이")
+        case "사-야" :
+            goodImage.image = UIImage(named: "g사야")
+        case "지-쿠" :
+            goodImage.image = UIImage(named: "g지쿠")
+        case "데이-지" :
+            goodImage.image = UIImage(named: "g데이지")
+        case "비&비" :
+            goodImage.image = UIImage(named: "g비비")
+        case "제이-슨" :
+            goodImage.image = UIImage(named: "g이슨이")
+        case "리이오" :
+            goodImage.image = UIImage(named: "g리오")
+        case "링-고" :
+            goodImage.image = UIImage(named: "g링고")
+        default:
+            print("nil")
+        }
+        
+        switch totalResult[totalResult.count - 1].key {
+        case "아-이작" :
+            badImage.image = UIImage(named: "아이작이랑")
+        case "사-야" :
+            badImage.image = UIImage(named: "사야랑")
+        case "지-쿠" :
+            badImage.image = UIImage(named: "지쿠랑")
+        case "데이-지" :
+            badImage.image = UIImage(named: "데이지랑")
+        case "비&비" :
+            badImage.image = UIImage(named: "비비랑")
+        case "제이-슨" :
+            badImage.image = UIImage(named: "제이슨이랑")
+        case "리이오" :
+            badImage.image = UIImage(named: "리오랑")
+        case "링-고" :
+            badImage.image = UIImage(named: "링고랑")
+        default:
+            print("nil")
+        }
+        
+        
+        
+        
         switch (totalResult[0].value) * 100 {
         case 0..<30 :
             goodMent.text = "많이는 아니지만 제법(?) 비슷해요"
@@ -72,53 +108,4 @@ class SecondViewController: UIViewController {
         return String(format: "%.2f", percentage)
     }
 
-}
-
-extension UILabel {
-    func addTextOutline(usingColor outlineColor: UIColor, outlineWidth: CGFloat) {
-        class OutlinedText: UILabel{
-            var outlineWidth: CGFloat = 0
-            var outlineColor: UIColor = .clear
-
-            override public func drawText(in rect: CGRect) {
-                let shadowOffset = self.shadowOffset
-                let textColor = self.textColor
-
-                let c = UIGraphicsGetCurrentContext()
-                c?.setLineWidth(outlineWidth)
-                c?.setLineJoin(.round)
-                c?.setTextDrawingMode(.stroke)
-                self.textAlignment = .center
-                self.textColor = outlineColor
-                super.drawText(in:rect)
-
-                c?.setTextDrawingMode(.fill)
-                self.textColor = textColor
-                self.shadowOffset = CGSize(width: 0, height: 0)
-                super.drawText(in:rect)
-
-                self.shadowOffset = shadowOffset
-            }
-        }
-
-        let textOutline = OutlinedText()
-        let outlineTag = 9999
-
-        if let prevTextOutline = viewWithTag(outlineTag) {
-            prevTextOutline.removeFromSuperview()
-        }
-
-        textOutline.outlineColor = outlineColor
-        textOutline.outlineWidth = outlineWidth
-        textOutline.textColor = textColor
-        textOutline.font = font
-        textOutline.text = text
-        textOutline.tag = outlineTag
-
-        sizeToFit()
-        addSubview(textOutline)
-        textOutline.frame = CGRect(x: -(outlineWidth / 2), y: -(outlineWidth / 2),
-                                   width: bounds.width + outlineWidth,
-                                   height: bounds.height + outlineWidth)
-    }
 }
