@@ -400,7 +400,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="데이지랑" translatesAutoresizingMaskIntoConstraints="NO" id="7qr-zK-kAp">
-                                <rect key="frame" x="119" y="638" width="96" height="35"/>
+                                <rect key="frame" x="133" y="638" width="96" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="8cy-aj-4mP"/>
                                     <constraint firstAttribute="width" constant="96" id="aJ7-uI-0bG"/>
@@ -444,7 +444,7 @@
                             <constraint firstItem="TYM-JT-jgZ" firstAttribute="top" secondItem="3CO-rC-Ztd" secondAttribute="bottom" constant="4" id="cGh-YT-7E1"/>
                             <constraint firstItem="7qr-zK-kAp" firstAttribute="top" secondItem="80a-6k-lH8" secondAttribute="bottom" constant="141" id="eAa-Z4-Cpu"/>
                             <constraint firstItem="hHu-K7-Rb3" firstAttribute="trailing" secondItem="5KV-hU-94p" secondAttribute="trailing" constant="51" id="g3N-G5-QoH"/>
-                            <constraint firstItem="hHu-K7-Rb3" firstAttribute="trailing" secondItem="7qr-zK-kAp" secondAttribute="trailing" constant="199" id="ghm-TJ-oy7"/>
+                            <constraint firstItem="hHu-K7-Rb3" firstAttribute="trailing" secondItem="7qr-zK-kAp" secondAttribute="trailing" constant="185" id="ghm-TJ-oy7"/>
                             <constraint firstItem="5KV-hU-94p" firstAttribute="leading" secondItem="hHu-K7-Rb3" secondAttribute="leading" constant="51" id="oLG-y8-qhm"/>
                             <constraint firstItem="JsW-GS-BVK" firstAttribute="centerX" secondItem="3CO-rC-Ztd" secondAttribute="centerX" id="pmC-em-Byk"/>
                             <constraint firstItem="vHm-IO-Vd1" firstAttribute="top" secondItem="IgZ-pd-ZbH" secondAttribute="bottom" constant="35" id="q2u-ch-2IM"/>
