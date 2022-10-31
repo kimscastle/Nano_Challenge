@@ -8,3 +8,7 @@
 #### 리펙토링 기록남기기
 
 # Nano_Challenge_2
+### 나와 비슷한 성향의 멘토 찾기
+
+#### 언어 : UIKit(StoryBoard), CoreML
+#### 주요기능 : CoreML의 tablular classification을 활용한 유사도 측정시스템
